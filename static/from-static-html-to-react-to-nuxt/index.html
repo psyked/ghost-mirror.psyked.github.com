@@ -1,0 +1,457 @@
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>PokéProject: from Static HTML, to React, to Nuxt.</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css%3Fv=5531834714.css">
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Psyked">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="PokéProject: from Static HTML, to React, to Nuxt.">
+    <meta property="og:description" content="Preface: This is the story of my development journey with PokéProject. Hopefully this isn't the complete story, and there's much more to be told again in the future. This isn't a tale of the perfect development lifecycle, and I'm sure that if I started this project from scratch again a">
+    <meta property="og:url" content="http://localhost:2368/from-static-html-to-react-to-nuxt/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2017/04/ivysaur.png">
+    <meta property="article:published_time" content="2017-04-10T08:11:00.000Z">
+    <meta property="article:modified_time" content="2017-04-10T08:11:00.000Z">
+    <meta property="article:tag" content="Web development">
+    <meta property="article:tag" content="PokéProject">
+    <meta property="article:tag" content="Nuxt">
+    <meta property="article:tag" content="React">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/psykedcouk">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PokéProject: from Static HTML, to React, to Nuxt.">
+    <meta name="twitter:description" content="Preface: This is the story of my development journey with PokéProject. Hopefully this isn't the complete story, and there's much more to be told again in the future. This isn't a tale of the perfect development lifecycle, and I'm sure that if I started this project from scratch again a">
+    <meta name="twitter:url" content="http://localhost:2368/from-static-html-to-react-to-nuxt/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2017/04/ivysaur.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="James Ford">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Web development, PokéProject, Nuxt, React">
+    <meta name="twitter:site" content="@psyked">
+    <meta property="og:image:width" content="1421">
+    <meta property="og:image:height" content="346">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Psyked",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/favicon.ico",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "James Ford",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/50bd52fe63e2264aeae49b33d0e9102e?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "http://localhost:2368/author/james/",
+        "sameAs": []
+    },
+    "headline": "PokéProject: from Static HTML, to React, to Nuxt.",
+    "url": "http://localhost:2368/from-static-html-to-react-to-nuxt/",
+    "datePublished": "2017-04-10T08:11:00.000Z",
+    "dateModified": "2017-04-10T08:11:00.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2017/04/ivysaur.png",
+        "width": 1421,
+        "height": 346
+    },
+    "keywords": "Web development, PokéProject, Nuxt, React",
+    "description": "Preface: This is the story of my development journey with PokéProject. Hopefully this isn&#x27;t the complete story, and there&#x27;s much more to be told again in the future. This isn&#x27;t a tale of the perfect development lifecycle, and I&#x27;m sure that if I started this project from scratch again a",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script type="text/javascript" src="../public/ghost-sdk.js%3Fv=5531834714"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "a00f0a6e663b"
+});
+</script>
+    <meta name="generator" content="Ghost 1.8">
+    <link rel="alternate" type="application/rss+xml" title="Psyked" href="../rss/index.html">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1821078-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9822532238875422",
+    enable_page_level_ads: true
+  });
+</script>
+
+</head>
+<body class="post-template tag-web-development tag-pokeproject tag-nuxt tag-react">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+                <a class="site-nav-logo" href="../">Psyked</a>
+            <ul class="nav">
+    <li class="nav-home" role="presentation"><a href="https://www.psyked.co.uk/">Home</a></li>
+    <li class="nav-medium" role="presentation"><a href="https://medium.com/@psyked">Medium</a></li>
+    <li class="nav-github" role="presentation"><a href="https://github.com/psyked">GitHub</a></li>
+    <li class="nav-twitter" role="presentation"><a href="https://twitter.com/psyked">Twitter</a></li>
+    <li class="nav-facebook" role="presentation"><a href="https://www.facebook.com/psykedcouk/">Facebook</a></li>
+    <li class="nav-linkedin" role="presentation"><a href="https://www.linkedin.com/in/jamesford/">LinkedIn</a></li>
+    <li class="nav-speaker-deck" role="presentation"><a href="https://speakerdeck.com/psyked">Speaker Deck</a></li>
+    <li class="nav-medium-old" role="presentation"><a href="https://medium.com/@psyked_james">Medium (old)</a></li>
+    <li class="nav-twitter-old" role="presentation"><a href="https://twitter.com/psyked_james">Twitter (old)</a></li>
+    <li class="nav-pokproject" role="presentation"><a href="https://www.pokeproject.co.uk/">Poképroject</a></li>
+</ul>
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+                <a class="social-link social-link-fb" href="https://www.facebook.com/psykedcouk" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+</a>
+                <a class="social-link social-link-tw" href="https://twitter.com/psyked" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+</a>
+        </div>
+            <a class="rss-button" href="http://cloud.feedly.com/#subscription/feed/http://localhost:2368/rss/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg>
+</a>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full post tag-web-development tag-pokeproject tag-nuxt tag-react ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="2017-04-10">10 April 2017</time>
+                        <span class="date-divider">/</span> <a href="../tag/web-development/">Web development</a>
+                </section>
+                <h1 class="post-full-title">PokéProject: from Static HTML, to React, to Nuxt.</h1>
+            </header>
+
+            <figure class="post-full-image" style="background-image: url(../content/images/2017/04/ivysaur.png)">
+            </figure>
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown"><h4 id="preface">Preface:</h4>
+<p>This is the story of my development journey with <a href="https://www.pokeproject.co.uk/">PokéProject.</a> Hopefully this isn't the complete story, and there's much more to be told again in the future. This isn't a tale of the perfect development lifecycle, and I'm sure that if I started this project from scratch again a fair number of alternate choices would have been made.</p>
+<p>Ready? <em>Let's get going.</em></p>
+<h3 id="theidea">The idea 💡✨</h3>
+<p>The initial idea for PokéProject was to use the classic Pokémon games of my childhood as inspiration for codenames in my projects at work, as a sort of nostalgic injection of fun into the daily grind.</p>
+<p>Project codenames are a fairly big thing at <a href="https://www.mmtdigital.co.uk/">MMT Digital</a> - each project team picks a codename for themselves as a bonding exercise during the first sprint - and often go so far as to support that with limited-edition swag, such as branded mugs, t-shirts or similar items. One of these project kick-off meetings sparked the idea for me, and it took shape from then on.</p>
+<h3 id="thetechnicalapproach">The technical approach 🤔</h3>
+<p>I am primarily a Front End Developer, and my language of choice is JavaScript. For the very first version of PokéProject I figured that all I needed would be static HTML, CSS and some plain vanilla JavaScript. No frameworks, no Bootstrap templates, and certainly nothing to distract me from the core purpose of the project, which was to generate codenames.</p>
+<h3 id="theprogressplateau">The progress plateau 📉</h3>
+<p>This lean, framework-free approach served me well at the start, and even afforded me time enough to code and blog about my code, but eventually I stopped making enough progress each time to make documenting the journey on such a regular basis seem worthwhile. I managed 8 posts in total before I got to this point.</p>
+<ul>
+<li><a href="https://medium.com/@psyked/pok%C3%A9project-dev-diary-prologue-d214a44c348f">PokéProject Dev Diary: Prologue</a></li>
+<li><a href="https://medium.com/@psyked/pok%C3%A9project-dev-diary-day-one-8a77a252bf0a">PokéProject Dev Diary: Day One</a></li>
+<li><a href="https://medium.com/@psyked/pokeproject-dev-diary-day-two-a6019e6cf0f0">PokéProject Dev Diary: Day Two</a></li>
+<li><a href="https://medium.com/@psyked/pok%C3%A9project-dev-diary-day-three-31afdf3e1302">PokéProject Dev Diary: Day Three</a></li>
+<li><a href="https://medium.com/@psyked/pok%C3%A9project-dev-diary-day-four-25aed272eb17">PokéProject Dev Diary: Day Four</a></li>
+<li><a href="https://medium.com/@psyked/pok%C3%A9project-dev-diary-day-five-92859457a20a">PokéProject Dev Diary: Day Five</a></li>
+<li><a href="https://medium.com/@psyked/pok%C3%A9project-dev-diary-day-six-c263ef30fd0c">PokéProject Dev Diary: Day Six</a></li>
+<li><a href="https://medium.com/@psyked/pok%C3%A9project-dev-diary-day-seven-dc096bdac274">PokéProject Dev Diary: Day Seven</a></li>
+</ul>
+<p>After this initial phase, having something substantial enough to write about in what was essentially a few hours' development each day was becoming too much hassle, and I stopped writing about it, even as development continued.</p>
+<h2 id="theneedtorebuild">The need to rebuild</h2>
+<p>This was essentially the first phase of development - getting a prototype application up and running, and out in the wild. Phase two is when we take the idea further, and begin a large scale redevelopment to enable bigger and better things.</p>
+<p>When I say bigger and better things, I'm talking about a few key features that I felt were lacking with PokéProject, and were limiting its chances of success. These were primarily:</p>
+<ul>
+<li>Social Networking integration.</li>
+<li>The maintainability and long-term scalability of the source code.</li>
+<li>The limitations of my URL routing solution and the difficulty of deploying and maintaining it.</li>
+<li>The download size of the website and its data sources.</li>
+</ul>
+<p>Having focussed more on the prototype and shunning unfamiliar frameworks, it was becoming increasingly apparent that I was spending much more time developing solutions that others had already solved, rather than developing my own unique application features.</p>
+<p>![]</p>
+<h2 id="statichtml">Static HTML</h2>
+<p>Static HTML is ultimately faster than anything that's dynamically generated on the server side is going to be. The development server for PokéProject uses NGINX to serve static HTML, and it's fast and scalable. Prior experience tells me that there's going to be no problems with load or resource consumption - if we get enough traffic to cause issues, it's not going to be NGINX which fails first.</p>
+<p>The setup that I went for was very low budget - my entire 'website' was a single index.html file which NGINX was configured to serve by default when a directly referenced file didn't exist on the server. Regardless of the URL requested, the same index.html file contents would be returned and, the client-side JavaScript would evaluate the window.location property to determine what content to display on screen. A low budget, entirely custom approach to URL routing - simple, but it works. Or worked, initially.</p>
+<h3 id="problemswithstatichtml">Problems with Static HTML</h3>
+<p>The problems with static HTML really started to emerge when I wanted to push PokéProject into the social sphere, and make the content more easily sharable on platforms like Twitter and Facebook. When adding links to these platforms they make a request to fetch data about the linked page, and use that to populate a preview of the link. The trouble is my static HTML pages are essentially all the same HTML file, served in response to any URL request and the contents evaluated and rendered client-side based on the content, which is far from ideal for these server-based website previews. I really needed different, appropriate HTML to be served for each URL request - essentially, I needed server-side rendering.</p>
+<h4 id="option1morestatichtml">Option 1: More Static HTML</h4>
+<p>One option that was open to me was the idea of pre-rendering my static HTML, building a one-off task to autogenerate a whole load of HTML files with different contents.</p>
+<p>To a certain extent I was already doing something similar - for the first version of the Twitter card integration I needed to create actual JPG format versions of my canvas rendering, so I built a script to do a one-off generation of  the 721 Pokémon cards needed to support it - but generating potentially thousands of copies static HTML files in the appropriate URL structures didn't seem the proper way, not least because the time it takes to update these on the server for each release was prohibitive.</p>
+<h4 id="option2serversiderendering">Option 2: Server Side Rendering</h4>
+<p>Another alternate option, and the one I actually took, was to investigate further the idea of building PokéProject in a proper framework, ideally one with server-side or 'universal' rendering support.</p>
+<p>Part of my decision making here was based on the fact that I <em>wanted</em> to use a framework. It's not generally a sensible business decision to gamble on something you don't understand when there's a perfectly viable alternative available, but I did it anyway, mainly because I hadn't used React before, and I wanted to change that.</p>
+<h2 id="adoptingreact">✨Adopting React✨</h2>
+<p><a href="https://facebook.github.io/react/">React</a> is a component-based view rendering library, and the theory and thinking that's gone into its conception makes it a really attractive library to be using.</p>
+<p>Once I had started it was really easy to transform my bespoke, standalone JavaScript code into React components, and once I had those it was startlingly easy to use, re-use and mash those components together to begin exploring a host of new directions for my application.</p>
+<h3 id="problemswithreact">Problems with React</h3>
+<p>The problem was, my out-of-the-box React application didn't support server-side rendering, which was kinda the main point of adopting it in the first place.</p>
+<p>React is very popular, and as a result there are loads of starter tutorials and bootstrap projects available. And I do mean loads. There's even <a href="index.html">a website dedicated to helping you find one with the features that you need.</a> I picked the first one I found that I found accessible, and ended up without the universal rendering support that I really needed from it in the first place.</p>
+<p>No problem, I thought, and picked another. Most of the structure was the same, and I spent an evening porting the code across, only to discover that 'this' template uses React <em>and</em> Redux. <a href="http://redux.js.org/">Redux</a> is a whole other deal - they even advise against taking on the two for the first time at the same time specifically on their website. Jump forward in time and wasted a few more days trying to figure out how <em>that</em> works, and I still don't have a React app with server-side rendered content, and so I'm back to desperately researching React starter templates for one that's a) easy enough for me to understand without lots of reading documentation and b) supports server side rendering, hot module reloading and everything else I think a project should have.</p>
+<p><img src="../content/images/2017/04/soconfusing.gif" alt="Oh, dear, everything is so confusing."></p>
+<p>By this point, I've spent almost as much time trying to understand React and getting a template which just <em>works</em> that I spent developing the core of the application. I want to work on my application functionality, not the boring things like configuration and customisation - that's the whole point of adopting a framework, abstracting away the dull, mundane bits of development.</p>
+<h3 id="admittingdefeat">Admitting defeat</h3>
+<p>I tried React because it offered to componentise my source code, give me a solid URL routing library, make me organise my source code better and offer server side rendering, but all I really ended up doing was realising 'React' as I understood it was more an umbrella term for a whole host of libraries, not one of which seemed to be intuitive enough for me to understand.</p>
+<h2 id="findingvuejs">Finding Vue.js</h2>
+<p><a href="https://vuejs.org/">Vue.js,</a> had been a technology in my peripheral vision for a little while, and I started really looking at it again after my failures with React. It's perhaps wrong to like a technology purely based on the branding of its website, but it has got that going for it as well. I don't start with the documentation when looking at a technology, I start with the code examples, and I was quickly redirected to the Nuxt project because it advertised server-side rendering.</p>
+<p><img src="../content/images/2017/04/nuxt.png" alt="Nuxt Logo"></p>
+<h2 id="adoptingnuxt">✨Adopting Nuxt✨</h2>
+<p>My experience with <a href="https://nuxtjs.org/">Nuxt</a> has been significantly better than that with React. Right from the start the example applications available on <a href="https://github.com/nuxt">GitHub</a> have 'just worked', and have been simple enough for me to muddle through without further reading and still offer all of the features I needed. Somehow, it's more intuitive than React ever was.</p>
+<p>Quite literally, I was able to find, download, install and have a working local development and production server working as a proof of concept with an Express-based API, webpack code-splitting, hot module reloading and everything else in under an hour. Given that I couldn't achieve the equivalent thing in <em>two weeks</em> of development with React, I was hooked on Nuxt fairly quickly.</p>
+<p>Perhaps it's because the community is much smaller, or perhaps Nuxt is ultimately less flexible than React, but it does seem that there's one way, and one way only to solve a problem - and I'm happy with that. Nuxt has an example for every feature I've needed, and I don't feel the need to challenge the approach or the architecture, because it works. It does seems to hide more of the technical details of the website away from me, and autogenerates core parts of the application, but that hasn't been a problem - it means I can focus more on my application, and making my unique stuff work, and forget about everything else.</p>
+<p>Since then, I've completely replaced <a href="https://www.pokeproject.co.uk/">PokéProject</a> with a Nuxt based version, and I'm excited for what the future has in store.</p>
+<p>![]</p>
+</div>
+            </section>
+
+
+            <footer class="post-full-footer">
+
+                <section class="author-card">
+                        <img class="author-profile-image" src="http://www.gravatar.com/avatar/50bd52fe63e2264aeae49b33d0e9102e?s=250&amp;d=mm&amp;r=x" alt="James Ford">
+                    <section class="author-card-content">
+                        <h4 class="author-card-name"><a href="../author/james/">James Ford</a></h4>
+                            <p>Read <a href="../author/james/">more posts</a> by this author.</p>
+                    </section>
+                </section>
+                <div class="post-full-footer-right">
+                    <a class="author-card-button" href="../author/james/">Read More</a>
+                </div>
+
+            </footer>
+
+
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+
+                <article class="read-next-card" style="background-image: url(../content/images/2017/04/imageedit_2_3667145930--1-.jpg)">
+                    <header class="read-next-card-header">
+                        <small class="read-next-card-header-sitetitle">— Psyked —</small>
+                        <h3 class="read-next-card-header-title"><a href="../tag/web-development/">Web development</a></h3>
+                    </header>
+                    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
+</div>
+                    <div class="read-next-card-content">
+                        <ul>
+                            <li><a href="../a-modern-development-workflow-ci-and-cd/">Hallmarks of a Modern development workflow - Continuous Integration &amp; Deployment</a></li>
+                            <li><a href="../modular-code-libraries-ftw/">Modular Code Libraries FTW</a></li>
+                            <li><a href="../what-to-look-for-from-a-prospective-developer/">What to look for from a (prospective) Developer</a></li>
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="../tag/web-development/">See all 4 posts →</a>
+                    </footer>
+                </article>
+
+                <article class="post-card post tag-agile">
+        <a class="post-card-image-link" href="../how-to-effectively-kill-your-agile-team/">
+            <div class="post-card-image" style="background-image: url(../content/images/2017/04/giphy.gif)"></div>
+        </a>
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="../how-to-effectively-kill-your-agile-team/">
+            <header class="post-card-header">
+                    <span class="post-card-tags">agile</span>
+                <h2 class="post-card-title">How to effectively kill your Agile Team</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>Agile methodology is the glorious present and future of software development, but the correct set of circumstances can seriously cripple a team's morale and their effectiveness. Introduce a hierarchy Such an innocuous thing,</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+                <img class="author-profile-image" src="http://www.gravatar.com/avatar/50bd52fe63e2264aeae49b33d0e9102e?s=250&amp;d=mm&amp;r=x" alt="James Ford">
+            <span class="post-card-author"><a href="../author/james/">James Ford</a></span>
+        </footer>
+    </div>
+</article>
+
+                <article class="post-card post tag-external-links tag-gif">
+        <a class="post-card-image-link" href="../the-history-of-the-humble-gif/">
+            <div class="post-card-image" style="background-image: url(../content/images/2017/02/jan-kahanek-184676.jpg)"></div>
+        </a>
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="../the-history-of-the-humble-gif/">
+            <header class="post-card-header">
+                    <span class="post-card-tags">External links</span>
+                <h2 class="post-card-title">The history of the humble gif</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>I'm a fan of gif images as a method of communication - particularly in our company Slack channel - and I love to learn a little more about the technology and development of</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+                <img class="author-profile-image" src="http://www.gravatar.com/avatar/50bd52fe63e2264aeae49b33d0e9102e?s=250&amp;d=mm&amp;r=x" alt="James Ford">
+            <span class="post-card-author"><a href="../author/james/">James Ford</a></span>
+        </footer>
+    </div>
+</article>
+
+        </div>
+    </div>
+</aside>
+
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="../">
+            <span>Psyked</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">—</span>
+    <div class="floating-header-title">PokéProject: from Static HTML, to React, to Nuxt.</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Pok%C3%A9Project%3A%20from%20Static%20HTML%2C%20to%20React%2C%20to%20Nuxt.&amp;url=http://localhost:2368/from-static-html-to-react-to-nuxt/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/from-static-html-to-react-to-nuxt/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="../">Psyked</a> © 2017</section>
+                <nav class="site-footer-nav">
+                    <a href="../">Latest Posts</a>
+                    <a href="https://www.facebook.com/psykedcouk" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/psyked" target="_blank">Twitter</a>
+                    <a href="https://ghost.org" target="_blank">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js%3Fv=5531834714"></script>
+
+
+    <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+
+    <!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Blog Ads -->
+<ins class="adsbygoogle" style="display:block;background:#333" data-ad-client="ca-pub-9822532238875422" data-ad-slot="2939606192" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<style>.adsbygoogle iframe{margin:0}</style>
+
+</body>
