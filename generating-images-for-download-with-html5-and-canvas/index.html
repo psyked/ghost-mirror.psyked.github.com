@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=1643630441.css">
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=74cb5503b6.css">
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="canonical" href="index.html">
@@ -86,7 +86,7 @@
 }
     </script>
 
-    <script type="text/javascript" src="../public/ghost-sdk.js?v=1643630441"></script>
+    <script type="text/javascript" src="../public/ghost-sdk.js?v=74cb5503b6"></script>
 <script type="text/javascript">
 ghost.init({
 	clientId: "ghost-frontend",
@@ -159,7 +159,7 @@ ghost.init({
                 <h1 class="post-full-title">Generating images for download with HTML5 and Canvas</h1>
             </header>
 
-            <figure class="post-full-image" style="background-image: url(../content/images/2017/04/neven-krcmarek-145603.jpg)">
+            <figure class="post-full-image" style="background-image: url(../content/images/2017/04/neven-krcmarek-145603.jpg.html)">
             </figure>
 
             <section class="post-full-content">
@@ -170,9 +170,9 @@ ghost.init({
 <p>This means you can adjust the resolution, the aspect ratio, add watermarks or even modify the image data before it's downloaded by the user. Of course, the original right-click menu and functionality still exists, so you can't use this as a method of stopping users from saving your images completely, but it does mean that you can give them a better experience using your website.</p>
 <h2 id="realworldexample">Real-world example</h2>
 <p>I've used this technique on <a href="https://www.pokeproject.co.uk/">PokéProject</a>, with what I call the <a href="https://www.pokeproject.co.uk/instagram/">'Highresinator'.</a> PokéProject takes the pixel art from the original Pokémon GameBoy games, and scales it up from the original 32x32 pixel images into wallpaper backgrounds for desktop computers or mobile devices.</p>
-<p><a href="https://www.pokeproject.co.uk/instagram/gengar"><img src="../content/images/2017/04/pokeproject.png" alt="Real world example on PokéProject"></a></p>
+<p><a href="https://www.pokeproject.co.uk/instagram/gengar"><img src="../content/images/2017/04/pokeproject.png.html" alt="Real world example on PokéProject"></a></p>
 <p>As you can see in the image above, as part of this process I'm generating a canvas-based preview of the wallpaper image, but that preview canvas isn't the correct resolution for any downloads. To fix this I've added a short form with download buttons, and clicking any of those buttons will generate the artwork shown on the canvas at the specified resolution.</p>
-<p><img src="../content/images/2017/04/downloadpokeproject.gif" alt="Animated example of PokéProject"></p>
+<p><img src="../content/images/2017/04/downloadpokeproject.gif.html" alt="Animated example of PokéProject"></p>
 <h2 id="examplecode">Example code</h2>
 <p>The key steps to this process are simple. First you have to generate an off-screen canvas element, into which you draw your image, and then you create an anchor element with a download attribute, transfer the users' click event to this element, and a download will be triggered.</p>
 <p>Let's look at some sample code.</p>
@@ -195,7 +195,7 @@ ghost.init({
 	drawingContext.fillRect(10, 10, 80, 80)
 &lt;/script&gt;
 </code></pre>
-<p><img src="../content/images/2017/04/preview.png" alt="Demo preview"></p>
+<p><img src="../content/images/2017/04/preview.png.html" alt="Demo preview"></p>
 <p>That works, but it's not very reusable - so let's refactor it a little:</p>
 <pre><code>&lt;script&gt;
 	function renderCanvas(canvasElement) {
@@ -208,7 +208,7 @@ ghost.init({
 &lt;/script&gt;
 </code></pre>
 <p>That's a bit more reusable - we're still doing the same actions, but we've made the canvas element that we draw to reusable.</p>
-<p><img src="../content/images/2017/04/rightclickpreview.png" alt="Demo right click preview"></p>
+<p><img src="../content/images/2017/04/rightclickpreview.png.html" alt="Demo right click preview"></p>
 <p>Our users can currently right click on the canvas element and save it locally. Let's add a button which will perform this action for them automatically.</p>
 <pre><code>&lt;script&gt;
 	function renderCanvas(canvasElement) {
@@ -248,7 +248,7 @@ ghost.init({
 <li>We fake a click event on our new hyperlink element, to trigger the file save</li>
 <li>We remove the link element from the DOM and clean up afterwards</li>
 </ol>
-<p><img src="../content/images/2017/04/canvaspreview-2.gif" alt="Canvas download image preview"></p>
+<p><img src="../content/images/2017/04/canvaspreview-2.gif.html" alt="Canvas download image preview"></p>
 <p>This code is currently just saving exactly what's in the canvas. Let's make things a little more interesting - we're going to change the size of the download and the colour of the box.</p>
 <pre><code>&lt;script&gt;
 	function renderCanvas(canvasElement, colour) {
@@ -281,7 +281,7 @@ ghost.init({
 </code></pre>
 <p>What we've done here is change the render function slightly, so that it takes a colour parameter to the render function, and we've changed the box drawing logic, so that it draws a rectangle inside the edges of the canvas, regardless of the canvas size.</p>
 <p>A user will now see a preview of a red box, but if they click on the download link, they'll get a green rectangle downloaded instead. They could still click on the original canvas and save that of course, but that's not the point of this exercise, and there are other ways of preventing that behaviour.</p>
-<p><img src="../content/images/2017/04/canvaspreview.gif" alt="Canvas download image preview"></p>
+<p><img src="../content/images/2017/04/canvaspreview.gif.html" alt="Canvas download image preview"></p>
 <p>We've achieved all of this on the client-side - no server-based image generation at all. This is the logic which underpins the wallpaper downloads of PokéProject <a href="https://www.pokeproject.co.uk/">[link]</a>, which has a number of pre-set image download links at fixed and custom resolutions.</p>
 <p><a href="https://codepen.io/psyked/pen/WjpaMQ">You can see a working example on CodePen.</a></p>
 </div>
@@ -291,7 +291,7 @@ ghost.init({
             <footer class="post-full-footer">
 
                 <section class="author-card">
-                        <img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford">
+                        <img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg.html" alt="James Ford">
                     <section class="author-card-content">
                         <h4 class="author-card-name"><a href="../author/james/">James Ford</a></h4>
                             <p>Front end web developer, author of the Flash Facebook Cookbook and Technical Architect at MMT Digital.</p>
@@ -313,7 +313,7 @@ ghost.init({
     <div class="inner">
         <div class="read-next-feed">
 
-                <article class="read-next-card" style="background-image: url(../content/images/2017/04/imageedit_2_3667145930--1-.jpg)">
+                <article class="read-next-card" style="background-image: url(../content/images/2017/04/imageedit_2_3667145930--1-.jpg.html)">
                     <header class="read-next-card-header">
                         <small class="read-next-card-header-sitetitle">— Psyked —</small>
                         <h3 class="read-next-card-header-title"><a href="../tag/canvas/">canvas</a></h3>
@@ -332,7 +332,7 @@ ghost.init({
 
                 <article class="post-card post tag-nodejs tag-trello">
         <a class="post-card-image-link" href="../uploading-files-to-trello-with-node-js/">
-            <div class="post-card-image" style="background-image: url(../content/images/2017/05/Optimized-sanwal-deen-93466.jpg)"></div>
+            <div class="post-card-image" style="background-image: url(../content/images/2017/05/Optimized-sanwal-deen-93466.jpg.html)"></div>
         </a>
     <div class="post-card-content">
         <a class="post-card-content-link" href="../uploading-files-to-trello-with-node-js/">
@@ -345,7 +345,7 @@ ghost.init({
             </section>
         </a>
         <footer class="post-card-meta">
-                <img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford">
+                <img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg.html" alt="James Ford">
             <span class="post-card-author"><a href="../author/james/">James Ford</a></span>
         </footer>
     </div>
@@ -353,7 +353,7 @@ ghost.init({
 
                 <article class="post-card post tag-agile">
         <a class="post-card-image-link" href="../how-to-effectively-kill-your-agile-team/">
-            <div class="post-card-image" style="background-image: url(../content/images/2017/04/giphy.gif)"></div>
+            <div class="post-card-image" style="background-image: url(../content/images/2017/04/giphy.gif.html)"></div>
         </a>
     <div class="post-card-content">
         <a class="post-card-content-link" href="../how-to-effectively-kill-your-agile-team/">
@@ -366,7 +366,7 @@ ghost.init({
             </section>
         </a>
         <footer class="post-card-meta">
-                <img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford">
+                <img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg.html" alt="James Ford">
             <span class="post-card-author"><a href="../author/james/">James Ford</a></span>
         </footer>
     </div>
@@ -423,7 +423,7 @@ ghost.init({
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=1643630441"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=74cb5503b6"></script>
 
 
     <script>
@@ -492,7 +492,7 @@ $(document).ready(function () {
 
 
     <!-- You can safely delete this line if your theme does not require jQuery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
 
 <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Blog Ads -->
