@@ -1,4 +1,25 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Psyked</title><description>James' Web Development Blog</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Psyked</title><link>http://localhost:2368/</link></image><generator>Ghost 1.9</generator><lastBuildDate>Sun, 24 Sep 2017 21:48:51 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>My Front End Web Development setup, with Visual Studio Code.</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; I've been using Visual Studio Code for about half a year now, after giving it a try at the insistence of other developers at the office. Prior to this I used Jetbrains WebStorm and PHPStorm.&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Psyked</title><description>James' Web Development Blog</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Psyked</title><link>http://localhost:2368/</link></image><generator>Ghost 1.9</generator><lastBuildDate>Mon, 25 Sep 2017 21:12:21 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>A collection of free, online, Front End Web Development books.</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;A remarkable number of excellent books about Front End Web Development are freely available online, if you know where to look. Here's a collection of those that I've discovered, and deigned to keep in my bookmarks.&lt;/p&gt;
+&lt;h2 id="eloquentjavascript"&gt;Eloquent JavaScript:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://eloquentjavascript.net/"&gt;http://eloquentjavascript.net/&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://eloquentjavascript.net/"&gt;&lt;img src="http://localhost:2368/content/images/2017/09/eloquent-javascript.png" alt="eloquent-javascript"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="learningjavascriptdesignpatterns"&gt;Learning JavaScript Design Patterns:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/"&gt;https://addyosmani.com/resources/essentialjsdesignpatterns/&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/front-end-web-development-books/</link><guid isPermaLink="false">59c827ffea66453d19defccf</guid><dc:creator>James Ford</dc:creator><pubDate>Mon, 25 Sep 2017 21:11:30 GMT</pubDate><media:content url="https://images.unsplash.com/photo-1504730668753-bea25cfb2d0e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=5df5ffb704f9dc081bdeea3aa5ba341b" medium="image"/><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;img src="https://images.unsplash.com/photo-1504730668753-bea25cfb2d0e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=5df5ffb704f9dc081bdeea3aa5ba341b" alt="A collection of free, online, Front End Web Development books."&gt;&lt;p&gt;A remarkable number of excellent books about Front End Web Development are freely available online, if you know where to look. Here's a collection of those that I've discovered, and deigned to keep in my bookmarks.&lt;/p&gt;
+&lt;h2 id="eloquentjavascript"&gt;Eloquent JavaScript:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://eloquentjavascript.net/"&gt;http://eloquentjavascript.net/&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://eloquentjavascript.net/"&gt;&lt;img src="http://localhost:2368/content/images/2017/09/eloquent-javascript.png" alt="A collection of free, online, Front End Web Development books."&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="learningjavascriptdesignpatterns"&gt;Learning JavaScript Design Patterns:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/"&gt;https://addyosmani.com/resources/essentialjsdesignpatterns/book/&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/"&gt;&lt;img src="http://localhost:2368/content/images/2017/09/ljsdp.jpg" alt="A collection of free, online, Front End Web Development books."&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="highperformancewebsites"&gt;High Performance Web Sites:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://stevesouders.com/hpws/"&gt;http://stevesouders.com/hpws/&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://stevesouders.com/hpws/"&gt;&lt;img src="http://localhost:2368/content/images/2017/09/hpws.jpg" alt="A collection of free, online, Front End Web Development books."&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="highperformancebrowsernetworking"&gt;High Performance Browser Networking:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://hpbn.co/"&gt;https://hpbn.co/&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://hpbn.co/"&gt;&lt;img src="http://localhost:2368/content/images/2017/09/hpbn.jpg" alt="A collection of free, online, Front End Web Development books."&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="designingforperformance"&gt;Designing for Performance:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://designingforperformance.com/"&gt;http://designingforperformance.com/&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://designingforperformance.com/"&gt;&lt;img src="http://localhost:2368/content/images/2017/09/dfp.jpg" alt="A collection of free, online, Front End Web Development books."&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>My Front End Web Development setup, with Visual Studio Code.</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; I've been using Visual Studio Code for about half a year now, after giving it a try at the insistence of other developers at the office. Prior to this I used Jetbrains WebStorm and PHPStorm.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The verdict:&lt;/strong&gt; My experience so far has been extremely positive - out of the&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/my-visual-studio-code-setup/</link><guid isPermaLink="false">59c77339ea66453d19defcc0</guid><category>Development</category><category>Visual Studio Code</category><dc:creator>James Ford</dc:creator><pubDate>Sun, 24 Sep 2017 18:51:19 GMT</pubDate><media:content url="https://images.unsplash.com/photo-1478358161113-b0e11994a36b?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=545bb25856598ef66864e9b875a15581" medium="image"/><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;img src="https://images.unsplash.com/photo-1478358161113-b0e11994a36b?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=545bb25856598ef66864e9b875a15581" alt="My Front End Web Development setup, with Visual Studio Code."&gt;&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; I've been using Visual Studio Code for about half a year now, after giving it a try at the insistence of other developers at the office. Prior to this I used Jetbrains WebStorm and PHPStorm.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The verdict:&lt;/strong&gt; My experience so far has been extremely positive - out of the box VS Code is pretty capable, and with the correct mix of plugins it can match almost any other IDE I've otherwise used, but with a much smaller memory footprint and faster startup time.&lt;/p&gt;
 &lt;p&gt;The plugins that I use for Visual Studio Code are:&lt;/p&gt;
@@ -391,67 +412,4 @@ If your Marketing strategy doesn't &lt;em&gt;already&lt;/em&gt; involve an autom
 &lt;/blockquote&gt;
 &lt;p&gt;Put shortly, &lt;strong&gt;everyone else is already doing it.&lt;/strong&gt; If you've not got automatons grooming your customers and making them feel special, &lt;strong&gt;it's about time you looked at doing it as well.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Header image courtesy of: &lt;a href="https://www.flickr.com/photos/74471232@N00/4530183325/"&gt;https://www.flickr.com/photos/74471232@N00/4530183325/&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content:encoded></item><item><title>Explorative Prototyping</title><description>&lt;div class="kg-card-markdown"&gt;&lt;blockquote&gt;
-&lt;p&gt;Your next big idea might very well be your greatest success.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I’ve been making a lot of simple prototypes recently. Each one has at least one feature that is unique and uses a technology that is new to me, and each explores an idea that I’ve come up&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/explorative-prototyping/</link><guid isPermaLink="false">59ac728187d02b43f8a8e7e5</guid><category>Hackathon</category><category>Prototyping</category><category>Programming</category><dc:creator>James Ford</dc:creator><pubDate>Thu, 29 Dec 2016 09:45:00 GMT</pubDate><media:content url="http://localhost:2368/content/images/2016/12/1-t-PnNMQ78_vCBb4t1MA0Iw.png" medium="image"/><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;blockquote&gt;
-&lt;img src="http://localhost:2368/content/images/2016/12/1-t-PnNMQ78_vCBb4t1MA0Iw.png" alt="Explorative Prototyping"&gt;&lt;p&gt;Your next big idea might very well be your greatest success.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I’ve been making a lot of simple prototypes recently. Each one has at least one feature that is unique and uses a technology that is new to me, and each explores an idea that I’ve come up with myself.&lt;/p&gt;
-&lt;p&gt;I’m pleased with my prototypes and the fact that I’ve created them. Their success — and my apparent boost in prolificity by creating them — is owed to a few simple concepts;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Understand the key goals.&lt;/li&gt;
-&lt;li&gt;Maintain a narrow scope.&lt;/li&gt;
-&lt;li&gt;Set a short timeframe.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;That’s it. But let’s take a few moments to delve deeper into what’s actually meant by those principles.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id="understandthekeygoals"&gt;Understand the key goals.&lt;/h3&gt;
-&lt;p&gt;The crux of a successful prototype is in setting goals. To spend your time effectively you need to know both the &lt;em&gt;‘why’&lt;/em&gt; and have an idea of the &lt;em&gt;‘how’&lt;/em&gt; before you begin. Sometimes you’ll only know the technology you want to explore (your &lt;em&gt;how&lt;/em&gt;), and other times you’ll have a goal (your &lt;em&gt;why&lt;/em&gt;) but no idea of how to achieve it. You need to know both before you start because:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A prototype[the &lt;em&gt;how&lt;/em&gt;] without a reason[the &lt;em&gt;why&lt;/em&gt;] will inevitably fizzle out to a simple proof-of-concept application.&lt;/li&gt;
-&lt;li&gt;A challenge[the &lt;em&gt;why&lt;/em&gt;] without a solution[the &lt;em&gt;how&lt;/em&gt;] isn’t ready for you to begin working on.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Start with a single high-level primary goal and a few secondary goals, and admit that some of those secondary goals might have to be sacrificed during development to limit your scope or keep within your time constraints.&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://localhost:2368/content/images/2016/12/1-EwIpZrNyhssgpFPaFVMzMA-2.jpeg" alt="Explorative Prototyping"&gt;&lt;/p&gt;
-&lt;p&gt;For example, here’s some of my recent project goals:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Name: Project Stats v1
-Primary: Encourage Source Control Best Practices in Team
-   Secondary: Collect data from Bitbucket
-   Secondary: Make data explorable with interactive charts
-Name: Work Resourcing v2
-Primary: Make weekly resourcing more user friendly
-   Secondary: Parse XLS files with Node.js
-   Secondary: Generate and send emails with Node.js
-   Secondary: Authenticate with Office 365 with Node.js
-Name: Monolithic.js
-Primary: Make upgrading Javascript to ES6 easier
-   Secondary: Build a tool to rewrite/reformat Javascript
-   Secondary: Break large legacy JS file into multiple files
-   Secondary: Don't break functionality of legacy Javascript
-   Secondary: Use rollup.js in build process
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Clear goals make it easier to control the scope of your prototype; anything that doesn’t actively contribute to meeting your core goals — however ‘neat’ the feature might be — can be shelved until the prototype is complete.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id="maintainanarrowscope"&gt;Maintain a narrow scope.&lt;/h3&gt;
-&lt;p&gt;Although it’s great fun to plan a project with all the bells and whistles, you can actually move faster and explore a more varied set of features if you tackle them in isolation. Essentially, limit your work-in-progress at the conceptual level.&lt;/p&gt;
-&lt;p&gt;Your high-level goal is often something that could be solved in lots of different ways, so refine what you’re doing, focus on a single feature at a time, deliver it and &lt;em&gt;then&lt;/em&gt; move onto the next. If you don’t you risk scope creep taking over your project, and complexity of everything you’re try to build starts to compromise your ability to finish any of it.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Scope creep is the bane of all software development, exponentially increasing the levels of complexity and timeframes of a project.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id="setashorttimeframe"&gt;Set a short timeframe.&lt;/h3&gt;
-&lt;p&gt;And know how much time you want to spend exploring your idea.&lt;/p&gt;
-&lt;p&gt;I limit my prototypes to timeframes measured in hours, not days or weeks. A prototype is a proof of concept. It doesn’t need to be beautifully coded, have unit tests or rock-solid deployment pipelines, it needs to &lt;em&gt;work&lt;/em&gt;, and in doing so make some measurable progress towards the initial goals.&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://localhost:2368/content/images/2016/12/1-56VBnNDs794aN5CzGgjWCg.gif" alt="Explorative Prototyping"&gt;&lt;/p&gt;
-&lt;p&gt;After a few hours’ work you should be in a position to estimate how much longer it’s going to take to finish the first version. If it’s over your initial time budget, seriously consider how you could simplify things to release something in your initial timeframe.&lt;/p&gt;
-&lt;p&gt;Of course, timeframes vary depending on what you’re attempting, and by whatever works for you. A few hours a day for a few concurrent days is roughly my attention span for new prototypes. Any longer and finishing the prototype stops being fun and becomes a chore. Nobody likes chores.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id="finally"&gt;Finally&lt;/h3&gt;
-&lt;p&gt;When it comes to new technologies, you don’t &lt;em&gt;really&lt;/em&gt; know how to properly build something until you’ve built it once already, which is what makes prototyping a great practice for honing your development skills.&lt;/p&gt;
-&lt;p&gt;Building a prototype can be an exciting way to explore something new, an opportunity to hone your development skills and a chance to explore an idea that you wouldn’t normally — all at the same time.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;This is a repost of &lt;a href="https://medium.com/@psyked/explorative-prototyping-71f2ad9d4e41#.9l1my6irg"&gt;the article originally posted on Medium.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>
