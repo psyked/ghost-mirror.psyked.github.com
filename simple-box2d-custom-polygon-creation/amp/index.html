@@ -19,7 +19,7 @@
     <meta property="og:description" content="I've been working on some classes to simplify Box2D for Actionscript developers (See previous post for a quick intro).  The latest update to these classes introduces couple of minor ideas, and one gosh-darned awesome idea, if I do say so myself.  Let's start with the awesome things, and move on">
     <meta property="og:url" content="http://localhost:2368/simple-box2d-custom-polygon-creation/">
     <meta property="article:published_time" content="2010-01-11T08:09:33.000Z">
-    <meta property="article:modified_time" content="2010-01-11T08:09:33.000Z">
+    <meta property="article:modified_time" content="2017-09-25T21:24:30.000Z">
     <meta property="article:tag" content="ActionScript">
     <meta property="article:tag" content="Box2D">
     <meta property="article:tag" content="ActionScript 3">
@@ -67,7 +67,7 @@
     "headline": "Simple Box2D - Custom Polygon creation.",
     "url": "http://localhost:2368/simple-box2d-custom-polygon-creation/",
     "datePublished": "2010-01-11T08:09:33.000Z",
-    "dateModified": "2010-01-11T08:09:33.000Z",
+    "dateModified": "2017-09-25T21:24:30.000Z",
     "keywords": "ActionScript, Box2D, ActionScript 3",
     "description": "I&#x27;ve been working on some classes to simplify Box2D for Actionscript developers (See previous post for a quick intro).  The latest update to these classes introduces couple of minor ideas, and one gosh-darned awesome idea, if I do say so myself.  Let&#x27;s start with the awesome things, and move on",
     "mainEntityOfPage": {
@@ -115,14 +115,22 @@ Or rather the methods for creating them.  Shapes in Box2D come in three basic f
 <p>So, here's the solution - or rather, the options.</p>
 <p><strong>Polygon creation option #1 - Creating a polygon from an array of points.</strong></p>
 <p>Using some clever triangulation code from <a href="http://www.splashdust.net/2009/10/box2d-mouse-drawing-now-with-ear-clipping/" target="_blank">Splashdust.net</a>, there's a simple method for creating any custom shape from an array of Point objects.  With this method you can create a shape with any number of sides, and not worry about whether the shape is concave or convex.  It'll still break if the edges of your shape interest each other, and doesn't support holes in the objects you're creating, but it's a start.</p>
-<p>[kml_flashembed movie="<a href="http://uploads.psyked.co.uk/2010/01/ComplexPolygonExample.swf">http://uploads.psyked.co.uk/2010/01/ComplexPolygonExample.swf</a>" height="280" width="500" /]</p>
+
+
+
+
+
 <pre><code>var array:Array = [ new Point( 0, 0 ), new Point( 10, 0 ), new Point( 10, 10 ), new Point( 20, 10 ), new Point( 20, 0 ), new Point( 30, 0 ), new Point( 30, 30 ), new Point( 0, 30 ) ];
 
 world.createComplexPolygon( 50, 50, array );</code></pre>
 <p><strong>Polygon creation option #2 - Creating a polygon from a shape in a library.</strong></p>
-<p><strong><a href="http://uploads.psyked.co.uk/2010/01/flashshapedemo.jpg"></a></strong></p>
+<p><strong><a href="../../content/images/2010/01/flashshapedemo.jpg"><amp-img class="alignnone size-full wp-image-1107" title="flashshapedemo" src="http://localhost:2368/content/images/2010/01/flashshapedemo.jpg" alt width="500" height="280" layout="responsive"></amp-img></a></strong></p>
 <p>This is where things get cool.  Creating a shape from a series of points is all well and good, but it's a laborious process to set up and modify.  You can create a shape in the Flash IDE, add your symbol to your library and import it to Box2D.  Currently this method only supports single shapes on a single layer, and only straight edges - but multiple shapes, layers and curved edges are definitely on the list for the future.</p>
-<p>[kml_flashembed movie="<a href="http://uploads.psyked.co.uk/2010/01/LibraryShapeExample.swf">http://uploads.psyked.co.uk/2010/01/LibraryShapeExample.swf</a>" height="280" width="500" /]</p>
+
+
+
+
+
 <pre><code>world.createPolyFromLibraryShape( 300, 100, "sampleShape", "vectorassets.swf" );</code></pre>
 <h3>Minor thing #1: Mouse interaction</h3>
 What fun is a simulation if you can't interact with it? So we now have an easy way to add mouse joints to move things about.  In the next version it's my plan to add a method for filtering out objects, presumably based on each bodies userData.
@@ -140,8 +148,8 @@ world.mouseInteraction = true;
 world.framerateIndependantAnimation = true;
 addChild( world );</code></pre>
 <p>I've compiled all of my source files into a handy project file if you want to take a look.  Documentation and comments are a bit sparse, but hopefully it'll prove useful!</p>
-<h2><a href="http://uploads.psyked.co.uk/2010/01/box2dutils.zip" target="_blank">Download the project files [Zip, 48kb]</a></h2>
-<a href="http://uploads.psyked.co.uk/2010/01/simples.jpg"></a>
+<h2><a href="../../content/images/2010/01/box2dutils.zip" target="_blank">Download the project files [Zip, 48kb]</a></h2>
+<a href="../../content/images/2010/01/simples.jpg"><amp-img class="alignnone size-full wp-image-1098" title="simples" src="http://localhost:2368/content/images/2010/01/simples.jpg" alt width="500" height="280" layout="responsive"></amp-img></a>
 <p>Simples!</p>
 </div>
 
