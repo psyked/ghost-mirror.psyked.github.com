@@ -109,12 +109,12 @@
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><p>I've been working on some classes to simplify Box2D for Actionscript developers (See <a href="http://www.psyked.co.uk/actionscript/simplifying-box2das3.htm" target="_self">previous post</a> for a quick intro).  The latest update to these classes introduces couple of minor ideas, and one gosh-darned awesome idea, if I do say so myself.  Let's start with the awesome things, and move on from there...</p>
+                <div class="kg-card-markdown"><p>I've been working on some classes to simplify Box2D for Actionscript developers (See <a href="//www.psyked.co.uk/actionscript/simplifying-box2das3.htm" target="_self">previous post</a> for a quick intro).  The latest update to these classes introduces couple of minor ideas, and one gosh-darned awesome idea, if I do say so myself.  Let's start with the awesome things, and move on from there...</p>
 <h3>Awesome thing: Creating Custom Polygons</h3>
 Or rather the methods for creating them.  Shapes in Box2D come in three basic flavours - circle, rectangle and custom polygon.  Moreover, everything must be convex (no inny bits), have no more than 8 sides, and can't have holes.  On the plus side you can still make larger, more complex objects out of smaller ones - but it all involves a lot of thinking.
 <p>So, here's the solution - or rather, the options.</p>
 <p><strong>Polygon creation option #1 - Creating a polygon from an array of points.</strong></p>
-<p>Using some clever triangulation code from <a href="http://www.splashdust.net/2009/10/box2d-mouse-drawing-now-with-ear-clipping/" target="_blank">Splashdust.net</a>, there's a simple method for creating any custom shape from an array of Point objects.  With this method you can create a shape with any number of sides, and not worry about whether the shape is concave or convex.  It'll still break if the edges of your shape interest each other, and doesn't support holes in the objects you're creating, but it's a start.</p>
+<p>Using some clever triangulation code from <a href="//www.splashdust.net/2009/10/box2d-mouse-drawing-now-with-ear-clipping/" target="_blank">Splashdust.net</a>, there's a simple method for creating any custom shape from an array of Point objects.  With this method you can create a shape with any number of sides, and not worry about whether the shape is concave or convex.  It'll still break if the edges of your shape interest each other, and doesn't support holes in the objects you're creating, but it's a start.</p>
 
 
 
@@ -136,7 +136,7 @@ world.createComplexPolygon( 50, 50, array );</code></pre>
 What fun is a simulation if you can't interact with it? So we now have an easy way to add mouse joints to move things about.  In the next version it's my plan to add a method for filtering out objects, presumably based on each bodies userData.
 <pre>world.mouseInteraction = true;</pre>
 <h3>Minor thing #2: Framerate-independent animation.</h3>
-I stole this idea wholeheartedly from <a href="http://actionsnippet.com/?p=1471" target="_blank">QuickBox2D</a>.  Too good an idea to pass up I'm afraid, this just means that the simulation of the Box2D world is based on a timer, not a framerate.  In theory then, the simulation doesn't slow down or speed up depending on the framerate - which is useful for many things, like graphic-intensive applications and/or memory optimisation.
+I stole this idea wholeheartedly from <a href="//actionsnippet.com/?p=1471" target="_blank">QuickBox2D</a>.  Too good an idea to pass up I'm afraid, this just means that the simulation of the Box2D world is based on a timer, not a framerate.  In theory then, the simulation doesn't slow down or speed up depending on the framerate - which is useful for many things, like graphic-intensive applications and/or memory optimisation.
 <pre>world.framerateIndependantAnimation = true;</pre>
 And here's some code for a quick example with framerate independent animation and mouse interaction enabled;
 <pre><code>var options:Box2DWorldOptions = new Box2DWorldOptions( 500, 280, 30, 9.8 );

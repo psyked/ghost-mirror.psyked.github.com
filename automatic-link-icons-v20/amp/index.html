@@ -110,7 +110,7 @@
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><p>Wow.  My previous post, <a href="https://www.psyked.co.uk/css/auto-matic-link-icons.htm" title="Open link in the same window">Auto-matic Link Icons</a> is by far the most popular on Psyked.  It's even been <a href="http://blog.bagg.spb.ru/2007/11/148/" title="Open link in a new window" target="_blank">translated into Russian!</a>  Things are constantly evolving, and I thought it only suitable that I should expand upon the original with a few new ideas, techniques and general improvements.  So, without further ado:</p>
+                <div class="kg-card-markdown"><p>Wow.  My previous post, <a href="https://www.psyked.co.uk/css/auto-matic-link-icons.htm" title="Open link in the same window">Auto-matic Link Icons</a> is by far the most popular on Psyked.  It's even been <a href="//blog.bagg.spb.ru/2007/11/148/" title="Open link in a new window" target="_blank">translated into Russian!</a>  Things are constantly evolving, and I thought it only suitable that I should expand upon the original with a few new ideas, techniques and general improvements.  So, without further ado:</p>
 <p><strong>Improving the Icon Display; </strong></p>
 <p>In the original post, I put forward the following code for adding link icons;</p>
 <blockquote> <code>a[href$='.pdf'] {
@@ -140,7 +140,7 @@ min-height:18px;
 overflow:visible;
 background:transparent url(Images/PDFIcon.gif) center left no-repeat;
 }</code></blockquote>
-There are other ways than just CSS, however.  Check out this post by Rebecca Murphey, <a href="http://blog.rebeccamurphey.com/2008/01/06/unobtrusive-cross-browser-add-filetype-icon-link-javascript-jquery/#comment-36" title="Open link in a new window" target="_blank">"Unobtrusive, cross-browser method to add icons to links"</a> - using javascript to get the same end-result.
+There are other ways than just CSS, however.  Check out this post by Rebecca Murphey, <a href="//blog.rebeccamurphey.com/2008/01/06/unobtrusive-cross-browser-add-filetype-icon-link-javascript-jquery/#comment-36" title="Open link in a new window" target="_blank">"Unobtrusive, cross-browser method to add icons to links"</a> - using javascript to get the same end-result.
 <p><strong>More than just file types;</strong></p>
 <p>Why stop at file types?  A pet peeve of mine is not being able to anticipate browser behaviour once I click a link. Will I get a new window?  Won't I?  In the first version of this post, we touched on wikipedia-style external link signifiers.  So let's expand this to react to the target attributes of links.</p>
 <blockquote><code>a<strong>[target='_blank']</strong> {
@@ -157,7 +157,7 @@ overflow:visible;</code>
 <strong>More than just link targets;</strong>
 <p>Talking of wikipedia, wouldn't it be useful to include a little more context to your links?  There's personal blogs, there's company websites, reference sites and there's search engines.  If you're linking to an article at wikipedia the information is likely to be a very different style to a personal blog.  And both those articles are going to be directly more useful than a page of search results.  So why not include the target websites' logo?  Or perhaps come up with some generic 'classification' icons to accompany your links? A collection of the favicons of several core websites could be a good idea.  But then it could get out of hand.</p>
 <p>Anyway, this technique would be little different than that for 'absolute' links, except that we are specifying more of the complete url;</p>
-<blockquote><code>a[href^="http://<strong>en.wikipedia</strong>"] {
+<blockquote><code>a[href^="//<strong>en.wikipedia</strong>"] {
 display:inline-block;
 padding:2px 20px 2px 0px;
 line-height:18px;
@@ -167,7 +167,7 @@ overflow:visible;</code>
 }</blockquote>
 What you include special icons for is up to you.  Wikipedia is an obvious choice, and so are the most visited sites, like search engines, social network sites, online shops, and journals.  This idea requires hard graft rather than offering a unilateral CSS solution.  I suggest picking the sites important to your website and going with them.  You've got some decision making to do on this one. I'd love to be able to autogenerate urls based on the link attributes but - so far as I can tell - that's beyond CSS at the moment.  Perhaps this calls for some server scripting?
 <p><strong>More than networking;</strong></p>
-<p>What else is there?  Well, we haven't even looked at <a href="http://microformats.org" title="Open link in a new window" target="_blank">Microformats</a> or '<em>rel</em>' attributes yet.  True, some things like rel-nofollow can be utterly useless to the user, but <em>hCard </em>links can be.  Then there's trackback links, bookmarks, rss feeds, practically anything.  The format is all pretty similar;</p>
+<p>What else is there?  Well, we haven't even looked at <a href="//microformats.org" title="Open link in a new window" target="_blank">Microformats</a> or '<em>rel</em>' attributes yet.  True, some things like rel-nofollow can be utterly useless to the user, but <em>hCard </em>links can be.  Then there's trackback links, bookmarks, rss feeds, practically anything.  The format is all pretty similar;</p>
 <blockquote><code>a<strong>[rel='bookmark']</strong> {
 display:inline-block;
 padding:2px 20px 2px 0px;
@@ -181,9 +181,9 @@ overflow:visible;</code>
 <p><strong>External links / More...</strong></p>
 <p>Since I started writing this post, I've found a few other good examples online - none of which I knew about before I started (darn!)</p>
 <ul>
-	<li>Alexander Kaiser has a similar implimentation to what I've mentioned here, but with working examples and a downloadable version.  Have a look at <a href="http://pooliestudios.com/projects/iconize/" title="Open link in a new window" target="_blank">"Iconize Textlinks with CSS."</a></li>
-	<li>The CSS Guy kickstarted this idea a while ago, with his post <a href="http://www.askthecssguy.com/2006/12/showing_hyperlink_cues_with_cs_1.html" title="Open link in a new window" target="_blank">"Showing Hyperlink Cues with CSS"</a></li>
-	<li>And Rebecca Murphey has an example of achieving the same effect using javascript with her post, <a href="http://blog.rebeccamurphey.com/2008/01/06/unobtrusive-cross-browser-add-filetype-icon-link-javascript-jquery/#comment-36" title="Open link in a new window" target="_blank">"Unobtrusive, cross-browser method to add icons to links"</a></li>
+	<li>Alexander Kaiser has a similar implimentation to what I've mentioned here, but with working examples and a downloadable version.  Have a look at <a href="//pooliestudios.com/projects/iconize/" title="Open link in a new window" target="_blank">"Iconize Textlinks with CSS."</a></li>
+	<li>The CSS Guy kickstarted this idea a while ago, with his post <a href="//www.askthecssguy.com/2006/12/showing_hyperlink_cues_with_cs_1.html" title="Open link in a new window" target="_blank">"Showing Hyperlink Cues with CSS"</a></li>
+	<li>And Rebecca Murphey has an example of achieving the same effect using javascript with her post, <a href="//blog.rebeccamurphey.com/2008/01/06/unobtrusive-cross-browser-add-filetype-icon-link-javascript-jquery/#comment-36" title="Open link in a new window" target="_blank">"Unobtrusive, cross-browser method to add icons to links"</a></li>
 </ul></div>
 
             </section>

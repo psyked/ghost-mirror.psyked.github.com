@@ -119,10 +119,10 @@ FORMAT) as BitmapData);</pre>
 <p>That's easy enough, isn't it? Create a button or whatnot and you can grab your screenshot data.  But what if there's no BitmapData in the clipboard? That's easy too - use the <em>hasFormat</em> function of the Clipboard class: <code>Clipboard.generalClipboard.hasFormat(ClipboardFormats.<br>
 BITMAP_FORMAT)</code> returns a boolean value - you'd never guess.</p>
 <h3>Detecting Print Screen keypresses?</h3>
-So, how about updating automatically?  Well, how about detecting keypresses - if we go have a little look in the AIR documentation [<a href="http://help.adobe.com/en_US/AS3LCR/Flash_10.0/flash/ui/Keyboard.html" target="_blank">link</a>] you'll see references to <code>Keyboard.KEYNAME_PRINTSCREEN</code>.  Sounds perfect, yes? Just make a key listener?
+So, how about updating automatically?  Well, how about detecting keypresses - if we go have a little look in the AIR documentation [<a href="//help.adobe.com/en_US/AS3LCR/Flash_10.0/flash/ui/Keyboard.html" target="_blank">link</a>] you'll see references to <code>Keyboard.KEYNAME_PRINTSCREEN</code>.  Sounds perfect, yes? Just make a key listener?
 <p>Well no luck with that - AIR can't detect all non-glyph printing characters - it detects things like the Ctrl, Alt, Shift keys - but not the Print Screen key. Those events just don't fire. Makes you wonder what on earth the static constants are in the documentation and the classes for, because as far as I can tell, nothing is ever going to use those events...</p>
 <h3>Detecting changes to the Clipboard</h3>
-Ok, so how about this for a solution: We can't detect the keypress of the Print Screen key - but we could poll the clipboard and watch for changes to it.  Mike Chambers' Volume Monitor class does something similar [<a href="http://www.mikechambers.com/blog/2009/02/24/monitoring-system-volume-changes-with-adobe-air/" target="_blank">link</a>] with watching the local storage drives, so I've stolen that idea. I'm not going to go into full explainations of the code, but I've put together a PrintScreenMonitor class.  It watches the clipboard  - dispatching an event when a new screenshot is added to the clipboard, another event when the screenshot changes, and another when the screenshot is removed from the clipboard.
+Ok, so how about this for a solution: We can't detect the keypress of the Print Screen key - but we could poll the clipboard and watch for changes to it.  Mike Chambers' Volume Monitor class does something similar [<a href="//www.mikechambers.com/blog/2009/02/24/monitoring-system-volume-changes-with-adobe-air/" target="_blank">link</a>] with watching the local storage drives, so I've stolen that idea. I'm not going to go into full explainations of the code, but I've put together a PrintScreenMonitor class.  It watches the clipboard  - dispatching an event when a new screenshot is added to the clipboard, another event when the screenshot changes, and another when the screenshot is removed from the clipboard.
 <p>Here's a look at the implementation;</p>
 <pre>import couk.psyked.air.printscreen.events.PrintScreenMonitorEvent;
 import couk.psyked.air.printscreen.PrintScreenMonitor;
@@ -152,7 +152,7 @@ Unless of course the event type is a REMOVE_SCREENSHOT event!  The only other p
 The above example works, and there's a couple of downloadable examples here.</p>
 <h3>Downloads / Samples.</h3>
 <ul>
-	<li><a href="http://www.psyked.co.uk/wp-content/uploads/2009/04/print_screen_monitor1.zip" target="_blank">Flex sample project.</a></li>
+	<li><a href="//www.psyked.co.uk/wp-content/uploads/2009/04/print_screen_monitor1.zip" target="_blank">Flex sample project.</a></li>
 	<li><a href="https://www.psyked.co.uk/wp-content/uploads/2009/04/AS3%20Classes.zip" target="_blank">Actionscript classes as a zip file.</a></li>
 </ul></div>
 

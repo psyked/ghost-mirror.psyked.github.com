@@ -121,7 +121,7 @@
 .Net pages put all the html inside a form and apparently this means that objects like embedded swfs become hidden from the Document Object Model in Internet Explorer.
 <p>The solution to this is to “elevate” the object to be part of the window rather that the document. It seems that by creating a reference and using a different element in the heirarchy fixes DOM visibility issues. i.e.</p>
 <blockquote>window.objectID = document.getElementById(objectID);</blockquote>
-A strange solution, huh? Ben Waldron has more information on this solution <a href="http://blogs.popart.com/ben-waldron/archive/2007/11/08/flash-externalinterface-in-asp-net-applications.aspx" target="_blank">here</a>.</div>
+A strange solution, huh? Ben Waldron has more information on this solution <a href="//blogs.popart.com/ben-waldron/archive/2007/11/08/flash-externalinterface-in-asp-net-applications.aspx" target="_blank">here</a>.</div>
 
             </section>
 

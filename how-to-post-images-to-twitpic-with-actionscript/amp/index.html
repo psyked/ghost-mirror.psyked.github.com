@@ -110,9 +110,9 @@
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><p>Uploading images to services like <a href="http://twitpic.com/" target="_blank">TwitPic</a> is actually as easy as sending a HTTP POST request, which means its also pretty darned simple to upload something from Flash Player 10 or AIR. This is an example for AIR, but doing something similar in Flash Player 10 should also be possible - you just need to swap the references to the File class to FileReference.</p>
+                <div class="kg-card-markdown"><p>Uploading images to services like <a href="//twitpic.com/" target="_blank">TwitPic</a> is actually as easy as sending a HTTP POST request, which means its also pretty darned simple to upload something from Flash Player 10 or AIR. This is an example for AIR, but doing something similar in Flash Player 10 should also be possible - you just need to swap the references to the File class to FileReference.</p>
 
-<p>So, how do we get our photos on TwitPic?  Well, let's check the API: <a href="http://twitpic.com/api.do" target="_blank">TwitPic API</a>. According to the API, it's just a case of posting an image file with additional parameters of <strong>username</strong>, <strong>password</strong> and if you like, <strong>message</strong>. And the upload location is pretty simple too - <em><a href="http://twitpic.com/api/upload">http://twitpic.com/api/upload</a></em> or <em><a href="http://twitpic.com/api/uploadAndPost">http://twitpic.com/api/uploadAndPost</a></em>. One for just uploading, and the other for posting things to your twitter feed at the same time.</p>
+<p>So, how do we get our photos on TwitPic?  Well, let's check the API: <a href="//twitpic.com/api.do" target="_blank">TwitPic API</a>. According to the API, it's just a case of posting an image file with additional parameters of <strong>username</strong>, <strong>password</strong> and if you like, <strong>message</strong>. And the upload location is pretty simple too - <em><a href="//twitpic.com/api/upload">//twitpic.com/api/upload</a></em> or <em><a href="//twitpic.com/api/uploadAndPost">//twitpic.com/api/uploadAndPost</a></em>. One for just uploading, and the other for posting things to your twitter feed at the same time.</p>
 <p>If you're posting automatically to twitter, TwitPic will automatically add the url to your image to the start of your tweet.</p>
 <p>So, let's check out some basic code:</p>
 
@@ -120,7 +120,7 @@
 <pre><code>var urlVars:URLVariables = new URLVariables();
 urlVars.username = "username";
 urlVars.password = "password";
-<p>var urlRequest:URLRequest = new URLRequest("<a href="http://twitpic.com/api/upload">http://twitpic.com/api/upload</a>");<br>
+<p>var urlRequest:URLRequest = new URLRequest("<a href="//twitpic.com/api/upload">//twitpic.com/api/upload</a>");<br>
 urlRequest.method = URLRequestMethod.POST;<br>
 urlRequest.data = urlVars;</p>
 <p>var file:File = File.desktopDirectory.resolvePath("test.jpg");<br>
