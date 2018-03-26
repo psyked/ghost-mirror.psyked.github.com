@@ -88,7 +88,7 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 1.10">
+    <meta name="generator" content="Ghost 1.21">
     <link rel="alternate" type="application/rss+xml" title="Psyked" href="../../rss/index.html">
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,600,400">
@@ -114,7 +114,7 @@
             <header class="post-header">
                 <h1 class="post-title">PokéProject: from Static HTML, to React, to Nuxt.</h1>
                 <section class="post-meta">
-                    <p class="author">by <a href="../../">James Ford</a></p>
+                    <p class="author">by <a href="../../author/james/">James Ford</a></p>
                     <time class="post-date" datetime="2017-04-10">2017-04-10</time>
                 </section>
             </header>
@@ -173,13 +173,13 @@
 <p>The problem was, my out-of-the-box React application didn't support server-side rendering, which was kinda the main point of adopting it in the first place.</p>
 <p>React is very popular, and as a result there are loads of starter tutorials and bootstrap projects available. And I do mean loads. There's even <a href="../">a website dedicated to helping you find one with the features that you need.</a> I picked the first one I found that I found accessible, and ended up without the universal rendering support that I really needed from it in the first place.</p>
 <p>No problem, I thought, and picked another. Most of the structure was the same, and I spent an evening porting the code across, only to discover that 'this' template uses React <em>and</em> Redux. <a href="//redux.js.org/">Redux</a> is a whole other deal - they even advise against taking on the two for the first time at the same time specifically on their website. Jump forward in time and wasted a few more days trying to figure out how <em>that</em> works, and I still don't have a React app with server-side rendered content, and so I'm back to desperately researching React starter templates for one that's a) easy enough for me to understand without lots of reading documentation and b) supports server side rendering, hot module reloading and everything else I think a project should have.</p>
-<p><amp-anim src="https://www.psyked.co.uk/content/images/2017/04/soconfusing.gif" alt="Oh, dear, everything is so confusing." width="500" height="227" layout="responsive"></amp-anim></p>
+<p></p>
 <p>By this point, I've spent almost as much time trying to understand React and getting a template which just <em>works</em> that I spent developing the core of the application. I want to work on my application functionality, not the boring things like configuration and customisation - that's the whole point of adopting a framework, abstracting away the dull, mundane bits of development.</p>
 <h3 id="admittingdefeat">Admitting defeat</h3>
 <p>I tried React because it offered to componentise my source code, give me a solid URL routing library, make me organise my source code better and offer server side rendering, but all I really ended up doing was realising 'React' as I understood it was more an umbrella term for a whole host of libraries, not one of which seemed to be intuitive enough for me to understand.</p>
 <h2 id="findingvuejs">Finding Vue.js</h2>
 <p><a href="https://vuejs.org/">Vue.js,</a> had been a technology in my peripheral vision for a little while, and I started really looking at it again after my failures with React. It's perhaps wrong to like a technology purely based on the branding of its website, but it has got that going for it as well. I don't start with the documentation when looking at a technology, I start with the code examples, and I was quickly redirected to the Nuxt project because it advertised server-side rendering.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/04/nuxt.png" alt="Nuxt Logo" width="307" height="307" layout="responsive"></amp-img></p>
+<p></p>
 <h2 id="adoptingnuxt">✨Adopting Nuxt✨</h2>
 <p>My experience with <a href="https://nuxtjs.org/">Nuxt</a> has been significantly better than that with React. Right from the start the example applications available on <a href="https://github.com/nuxt">GitHub</a> have 'just worked', and have been simple enough for me to muddle through without further reading and still offer all of the features I needed. Somehow, it's more intuitive than React ever was.</p>
 <p>Quite literally, I was able to find, download, install and have a working local development and production server working as a proof of concept with an Express-based API, webpack code-splitting, hot module reloading and everything else in under an hour. Given that I couldn't achieve the equivalent thing in <em>two weeks</em> of development with React, I was hooked on Nuxt fairly quickly.</p>
@@ -193,7 +193,7 @@
         </article>
     </main>
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="../../">Psyked</a> © 2017</section>
+        <section class="copyright"><a href="../../">Psyked</a> © 2018</section>
         <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
     </footer>
 </body>

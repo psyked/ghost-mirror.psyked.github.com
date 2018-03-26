@@ -87,7 +87,7 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 1.10">
+    <meta name="generator" content="Ghost 1.21">
     <link rel="alternate" type="application/rss+xml" title="Psyked" href="../../rss/index.html">
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,600,400">
@@ -113,7 +113,7 @@
             <header class="post-header">
                 <h1 class="post-title">PokéProject: Adventures with LEGO® Bricks</h1>
                 <section class="post-meta">
-                    <p class="author">by <a href="../../">James Ford</a></p>
+                    <p class="author">by <a href="../../author/james/">James Ford</a></p>
                     <time class="post-date" datetime="2017-10-05">2017-10-05</time>
                 </section>
             </header>
@@ -125,7 +125,7 @@
                 <div class="kg-card-markdown"><p>Using JavaScript and HTML5 canvas elements to convert images into 2 dimensional LEGO brick plans.</p>
 <h3 id="part1fromimagespritetopixelart">Part 1: From image sprite to pixel art.</h3>
 <p>What’s the difference between the image sprites included in the original Game Boy games and Retro Pixel art? If you ask me, it’s just a matter of scale — scale the images up, and suddenly it’s art.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/09/1-ahfgymTGsLrv5DvRElUX4A.png" alt="Art, for reference." width="675" height="390" layout="responsive"></amp-img><br>
+<p><br>
 <em>Art, for reference.</em></p>
 <p>But simply printing this ‘pixel art’ out at a large size isn’t really impressive. After all, why bother? — you could just as easily go with a higher resolution version of the same image. You could print a version of the pixel art on something the size of a postage stamp, but just as easily print it on a sheet of paper, or on a large poster — there’s no constraints on standard printing, after all. What’s more visually impressive is mixing media. If you made your pixel art out of lego for example; well, that’s more interesting.</p>
 <h3 id="fromthisideapokprojectlegoeditionwasborn">💡 From this idea, PokéProject: LEGO Edition was born.</h3>
@@ -137,22 +137,22 @@
 <p>I’ve made <a href="https://github.com/psyked/LEGO-Bricks-Data">the results of my data harvesting efforts available on GitHub.</a></p>
 <h3 id="palettemapping">Palette mapping</h3>
 <p>The original Game Boy Colour could support over 32,000 colours [<a href="https://en.wikipedia.org/wiki/List_of_video_game_console_palettes#Game_Boy_Color">source</a>], but LEGO Bricks only come in 40 or so [<a href="//lego.wikia.com/wiki/Colour_Palette">source</a>]. The first challenge was to map those two palettes together and visualise the outcome.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-m0a0IO5JS4BninOLPPt97A.jpeg" alt="Directly mapping colours to colours wasn’t especially hard to implement — and the effects weren’t too bad either." width="1350" height="760" layout="responsive"></amp-img></p>
+<p></p>
 <p><em>Directly mapping colours to colours wasn’t especially hard to implement — and the effects weren’t too bad either.</em></p>
 <p>For the first pass at this colour mapping, I used what was essentially a <a href="https://stackoverflow.com/a/13587077/377961">Euclidean distance</a> calculation, treating the colour of each pixel in the source image as a number and finding the nearest match in the more limited lego colours palette.</p>
 <h3 id="introducingperceptualcolourmatchingtheory">Introducing… perceptual Colour Matching theory</h3>
 <p>After a little testing, it emerged that the simple colour matches being used weren’t quite up to scratch. As an example, the lightest of colours — which were quite clearly a grey, green or blue — would be matched with the light pink colour, because that’s the closest match from a programmatic point of view, or important details would get lost when there’s not a lot of contrast.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-IHN_O3KWkc8rDCfBRVPSzg.png" alt="DeltaE colour matching on the left, Euclidean distance in the middle, source sprite on the right." width="1250" height="400" layout="responsive"></amp-img><br>
+<p><br>
 <em>DeltaE colour matching on the left, Euclidean distance in the middle, source sprite on the right.</em></p>
 <p>Fortunately lots of smart people have already figured this out and solved it several times over, and come up with standard formulas for calculating colour matches based on human perception. With the help of <a href="https://stackoverflow.com/a/29247003/377961">StackOverflow</a> and the <a href="//zschuessler.github.io/DeltaE/">DeltaE library</a> I was able to make some great improvements in the colour matching, enabling a much more nuanced palette map.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-VEuetcvPBJ0MeubZVG8mpg.png" alt="DeltaE (the 1976 version) colour matching isn’t half bad." width="1360" height="760" layout="responsive"></amp-img><br>
+<p><br>
 <em>DeltaE (the 1976 version) colour matching isn’t half bad.</em></p>
 <p>There are actually three versions of the DeltaE / LAB perceptual colour matching calculations, so with a little experimentation I was able to try them out until I found one that seemed to work well across the board.</p>
 <h3 id="expandingthedataset">Expanding the data set</h3>
 <p>It was at this point in time I stumbled across an interesting piece of information — not all of the available LEGO bricks are actually available through Pick-A-Brick, but many of them <em>are</em> available through the <a href="https://www.lego.com/en-gb/service/replacementparts/sale">replacement parts service,</a> providing you know the part id of the brick itself.</p>
 <p>This data set was a little more difficult to put together, but it’s essentially the same principle — scraping the official LEGO website and putting it into a JSON data set for my source code to use.</p>
 <p>The effect of this that it massively expands the available brick colours and dimensions, which in turn greatly improves the quality of the colour matching in our models.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-NRj28widDkpcI5InJLhXJA.png" alt="LEGO Brick colour matching, using the available bricks from the replacement parts service." width="1340" height="1040" layout="responsive"></amp-img><br>
+<p><br>
 <em>LEGO Brick colour matching, using the available bricks from the replacement parts service.</em></p>
 <p>Finally happy with the outcome of mapping sprite pixel colours to LEGO brick colours, I decided to tackle the next challenge — making efficient use of LEGO bricks.</p>
 <hr>
@@ -161,13 +161,13 @@
 <h3 id="optimalbrickcalculations">Optimal Brick calculations 💰</h3>
 <p>Looking into the feasibility of actually purchasing LEGO bricks to make these sprites, it turns out it’s quite expensive. The bricks themselves average around £0.05 each, which puts the cost for a 64x64 pixel image at £204.80, which is <em>extreme.</em></p>
 <p>However, there’s economies to be made. If you can use fewer larger bricks to produce the same image, the effective cost-per-pixel can drop significantly, to around £0.01 per pixel, which saves quite a significant amount of cash.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-PQTitbDaP87fIPGqTqcq8A.png" alt="Needless to say, I put a fair amount of effort into optimising expenditure." width="1452" height="1364" layout="responsive"></amp-img><br>
+<p><br>
 <em>Needless to say, I put a fair amount of effort into optimising expenditure.</em></p>
 <h3 id="itsjustnotlego">It’s just not LEGO</h3>
 <p>In addition to the raw cost issue, it doesn’t really feel like a <em>real</em> project if everything is made of 1x1 bricks. That’s the kind of boring thing that an old style dot-matrix printer would output, and it doesn’t feel all that creative.</p>
 <p>As it transpires, this is exactly what <a href="//nerdist.com/londons-lego-store-lets-you-buy-a-lego-mosaic-of-your-face/">a dedicated booth in the London LEGO shop</a> does, but I still think it’s a cop-out and I can do better.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-L3Wr47nE4EHdH1ufkMhLcg.png" alt width="1280" height="720" layout="responsive"></amp-img></p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-Eg0GiHYzAPp18q6v1ty4gg.png" alt="Who really wants to place 2,304 individual LEGO bricks, anyway?" width="1280" height="720" layout="responsive"></amp-img><br>
+<p></p>
+<p><br>
 <em>Who really wants to place 2,304 individual LEGO bricks, anyway?</em></p>
 <hr>
 <h3 id="insearchofpriorwork">In search of prior work.</h3>
@@ -182,8 +182,8 @@
 <p>Changing the colours of an image with JavaScript and HTML5 canvas elements is fairly easy — you pull in the image data as an Array, and you loop through it to get the R,G,B,A values for each pixel, which you can modify on the fly. Simple enough, but it lacks understanding of pixel coordinates and any sense of neighbouring pixels.</p>
 <p>My solution was to copy the image data into a new data structure which could easily reference its neighbours, and then for each pixel iterate through the available LEGO bricks — first to find the nearest colour match, and then to find the largest possible brick which could fit anchored at that point.</p>
 <p>Given a few passes the outcome is quite acceptable.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-khfGNAUXONDNEk-K-2-InQ.png" alt="1x1 Bricks" width="661" height="661" layout="responsive"></amp-img><br>
-<amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-Epnx95QXZr9PHyGC55A8oQ.png" alt="Fairly-optimal various sized bricks" width="661" height="661" layout="responsive"></amp-img><br>
+<p><br>
+<br>
 <em>1x1 Bricks versus fairly-optimal various-sized Bricks</em></p>
 <p>It’s not the most optimal solution that might be technically possible, but it’s better than doing nothing at all to optimise the output.</p>
 <p>The biggest flaw is that it effectively scans through the image, top to bottom, left to right, to try and place bricks in an optimal fashion. Logically there could be better starting points for some shapes, ones which ultimately use less bricks to complete, but such an approach requires an infeasible number of passes to optimise, and that isn’t something I even want to try.</p>
@@ -194,13 +194,13 @@
 <p>So what’s next? Turns out there’s one more issue… a flaw in my logic.</p>
 <p>I had incorrectly assumed that all of the LEGO brick colours I’d grabbed from the internet were available as 1x1 bricks, and my ‘algorithm’ was based around that assumption. When I actually went to go and purchase those bricks… then I had a problem. And for some sprites, it was quite a problem.</p>
 <p>I’ve highlighted the problematic pixels in these images:</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-rU7_XZWxTWMKPwGjNcPFJg.png" alt="Highlighting the invalid / unavailable pixels in Magenta" width="661" height="661" layout="responsive"></amp-img><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-_Ca4g3bvmBZYkOfLDjsUdw.png" alt="Highlighting the invalid / unavailable pixels in Magenta" width="661" height="661" layout="responsive"></amp-img><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-EwrUQTt0cCVQurrcolcHLA.png" alt="Highlighting the invalid / unavailable pixels in Magenta" width="661" height="661" layout="responsive"></amp-img><br>
+<p><br>
 <em>Highlighting the invalid / unavailable pixels in Magenta</em></p>
 <p>So, how best to deal with this issue?</p>
 <p>I’m loathe to simply remove those pixel colours from the pool — I like what I’ve achieved with the colour matching, and besides we only have 41 LEGO colours to play with as it is — don’t want to reduce that pool any further.</p>
 <p>My solution was to take those invalid bricks and find the next best fitting brick colour, repeatedly updating and looping through the image data and recalculating a next-best colour match for each pixel of the sprite until I had an acceptable match.</p>
-<p><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-JiEovDUZyrhOyrc8EJAH5g.png" alt="The same sprites with next-best colour matching for invalid pixels" width="661" height="661" layout="responsive"></amp-img><amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-G-RzM3iSz_Ne5WWRLYMFrA.png" alt="The same sprites with next-best colour matching for invalid pixels" width="661" height="661" layout="responsive"></amp-img><br>
-<amp-img src="https://www.psyked.co.uk/content/images/2017/10/1-EwrUQTt0cCVQurrcolcHLA-1.png" alt="The same sprites with next-best colour matching for invalid pixels" width="661" height="661" layout="responsive"></amp-img><br>
+<p><br>
+<br>
 <em>The same sprites with next-best colour matching for invalid pixels</em></p>
 <p>Naturally, I went through quite a bit of trial and error to get to this stage — I tried selecting average pixel colours from neighbours, but that generally lost details, and I tried some complicated contrast-based comparisons to bleed similar colours into neighbouring invalid pixels, but that didn’t work well either. The simplest solution was the best — calculating a prioritised list of matching colours for each brick, and regressing through that list whenever the bricks we wanted didn’t actually exist.</p>
 <hr>
@@ -219,7 +219,7 @@
         </article>
     </main>
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="../../">Psyked</a> © 2017</section>
+        <section class="copyright"><a href="../../">Psyked</a> © 2018</section>
         <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
     </footer>
 </body>
