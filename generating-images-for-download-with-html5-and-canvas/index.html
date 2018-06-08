@@ -8,12 +8,12 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=79f0267bb1.css">
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=79f0267bb1">
 
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="index.html">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.psyked.co.uk/generating-images-for-download-with-html5-and-canvas/">
     <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="amphtml" href="amp/index.html">
+    <link rel="amphtml" href="https://www.psyked.co.uk/generating-images-for-download-with-html5-and-canvas/amp/">
     
     <meta property="og:site_name" content="Psyked">
     <meta property="og:type" content="article">
@@ -60,9 +60,9 @@
         "name": "James Ford",
         "image": {
             "@type": "ImageObject",
-            "url": "https://www.psyked.co.uk/content/images/2017/09/profile-photo-2.jpg",
-            "width": 1367,
-            "height": 1365
+            "url": "https://www.psyked.co.uk/content/images/2018/06/profile-photo.jpeg",
+            "width": 460,
+            "height": 460
         },
         "url": "https://www.psyked.co.uk/author/james/",
         "sameAs": [
@@ -88,7 +88,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.js?v=79f0267bb1"></script>
+    <script src="/public/ghost-sdk.js?v=79f0267bb1"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -96,7 +96,7 @@ ghost.init({
 });
 </script>
     <meta name="generator" content="Ghost 1.22">
-    <link rel="alternate" type="application/rss+xml" title="Psyked" href="../rss/index.html">
+    <link rel="alternate" type="application/rss+xml" title="Psyked" href="https://www.psyked.co.uk/rss/">
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -126,10 +126,10 @@ ghost.init({
     <div class="inner">
         <nav class="site-nav">
     <div class="site-nav-left">
-                <a class="site-nav-logo" href="../">Psyked</a>
+                <a class="site-nav-logo" href="https://www.psyked.co.uk">Psyked</a>
             <ul class="nav" role="menu">
     <li class="nav-home" role="menuitem"><a href="https://www.psyked.co.uk/">Home</a></li>
-    <li class="nav-about" role="menuitem"><a href="../about/">About</a></li>
+    <li class="nav-about" role="menuitem"><a href="https://www.psyked.co.uk/about/">About</a></li>
     <li class="nav-pokproject" role="menuitem"><a href="https://www.pokeproject.co.uk/">Poképroject</a></li>
     <li class="nav-duotone" role="menuitem"><a href="https://psyked.github.io/duotone/">Duotone</a></li>
     <li class="nav-runmaps" role="menuitem"><a href="https://psyked.github.io/runmaps/">RunMaps</a></li>
@@ -157,12 +157,12 @@ ghost.init({
             <header class="post-full-header">
                 <section class="post-full-meta">
                     <time class="post-full-meta-date" datetime="2017-05-01">1 May 2017</time>
-                        <span class="date-divider">/</span> <a href="../tag/canvas/">Canvas</a>
+                        <span class="date-divider">/</span> <a href="/tag/canvas/">Canvas</a>
                 </section>
                 <h1 class="post-full-title">Generating images for download with HTML5 and Canvas</h1>
             </header>
 
-            <figure class="post-full-image" style="background-image: url(../content/images/2017/04/neven-krcmarek-145603.jpg)">
+            <figure class="post-full-image" style="background-image: url(/content/images/2017/04/neven-krcmarek-145603.jpg)">
             </figure>
 
             <section class="post-full-content">
@@ -173,9 +173,9 @@ ghost.init({
 <p>This means you can adjust the resolution, the aspect ratio, add watermarks or even modify the image data before it's downloaded by the user. Of course, the original right-click menu and functionality still exists, so you can't use this as a method of stopping users from saving your images completely, but it does mean that you can give them a better experience using your website.</p>
 <h2 id="realworldexample">Real-world example</h2>
 <p>I've used this technique on <a href="https://www.pokeproject.co.uk/">PokéProject</a>, with what I call the <a href="https://www.pokeproject.co.uk/instagram/">'Highresinator'.</a> PokéProject takes the pixel art from the original Pokémon GameBoy games, and scales it up from the original 32x32 pixel images into wallpaper backgrounds for desktop computers or mobile devices.</p>
-<p><a href="https://www.pokeproject.co.uk/instagram/gengar"><img src="../content/images/2017/04/pokeproject.png" alt="Real world example on PokéProject"></a></p>
+<p><a href="https://www.pokeproject.co.uk/instagram/gengar"><img src="/content/images/2017/04/pokeproject.png" alt="Real world example on PokéProject"></a></p>
 <p>As you can see in the image above, as part of this process I'm generating a canvas-based preview of the wallpaper image, but that preview canvas isn't the correct resolution for any downloads. To fix this I've added a short form with download buttons, and clicking any of those buttons will generate the artwork shown on the canvas at the specified resolution.</p>
-<p><img src="../content/images/2017/04/downloadpokeproject.gif" alt="Animated example of PokéProject"></p>
+<p><img src="/content/images/2017/04/downloadpokeproject.gif" alt="Animated example of PokéProject"></p>
 <h2 id="examplecode">Example code</h2>
 <p>The key steps to this process are simple. First you have to generate an off-screen canvas element, into which you draw your image, and then you create an anchor element with a download attribute, transfer the users' click event to this element, and a download will be triggered.</p>
 <p>Let's look at some sample code.</p>
@@ -198,7 +198,7 @@ ghost.init({
 	drawingContext.fillRect(10, 10, 80, 80)
 &lt;/script&gt;
 </code></pre>
-<p><img src="../content/images/2017/04/preview.png" alt="Demo preview"></p>
+<p><img src="/content/images/2017/04/preview.png" alt="Demo preview"></p>
 <p>That works, but it's not very reusable - so let's refactor it a little:</p>
 <pre><code>&lt;script&gt;
 	function renderCanvas(canvasElement) {
@@ -211,7 +211,7 @@ ghost.init({
 &lt;/script&gt;
 </code></pre>
 <p>That's a bit more reusable - we're still doing the same actions, but we've made the canvas element that we draw to reusable.</p>
-<p><img src="../content/images/2017/04/rightclickpreview.png" alt="Demo right click preview"></p>
+<p><img src="/content/images/2017/04/rightclickpreview.png" alt="Demo right click preview"></p>
 <p>Our users can currently right click on the canvas element and save it locally. Let's add a button which will perform this action for them automatically.</p>
 <pre><code>&lt;script&gt;
 	function renderCanvas(canvasElement) {
@@ -251,7 +251,7 @@ ghost.init({
 <li>We fake a click event on our new hyperlink element, to trigger the file save</li>
 <li>We remove the link element from the DOM and clean up afterwards</li>
 </ol>
-<p><img src="../content/images/2017/04/canvaspreview-2.gif" alt="Canvas download image preview"></p>
+<p><img src="/content/images/2017/04/canvaspreview-2.gif" alt="Canvas download image preview"></p>
 <p>This code is currently just saving exactly what's in the canvas. Let's make things a little more interesting - we're going to change the size of the download and the colour of the box.</p>
 <pre><code>&lt;script&gt;
 	function renderCanvas(canvasElement, colour) {
@@ -284,7 +284,7 @@ ghost.init({
 </code></pre>
 <p>What we've done here is change the render function slightly, so that it takes a colour parameter to the render function, and we've changed the box drawing logic, so that it draws a rectangle inside the edges of the canvas, regardless of the canvas size.</p>
 <p>A user will now see a preview of a red box, but if they click on the download link, they'll get a green rectangle downloaded instead. They could still click on the original canvas and save that of course, but that's not the point of this exercise, and there are other ways of preventing that behaviour.</p>
-<p><img src="../content/images/2017/04/canvaspreview.gif" alt="Canvas download image preview"></p>
+<p><img src="/content/images/2017/04/canvaspreview.gif" alt="Canvas download image preview"></p>
 <p>We've achieved all of this on the client-side - no server-based image generation at all. This is the logic which underpins the wallpaper downloads of PokéProject <a href="https://www.pokeproject.co.uk/">[link]</a>, which has a number of pre-set image download links at fixed and custom resolutions.</p>
 <p><a href="https://codepen.io/psyked/pen/WjpaMQ">You can see a working example on CodePen.</a></p>
 </div>
@@ -296,14 +296,14 @@ ghost.init({
 
                     
 <section class="author-card">
-        <img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford">
+        <img class="author-profile-image" src="/content/images/2018/06/profile-photo.jpeg" alt="James Ford">
     <section class="author-card-content">
-        <h4 class="author-card-name"><a href="../author/james/">James Ford</a></h4>
-            <p>Front End web developer, author of the Flash Facebook Cookbook and Senior Developer at Deeson.</p>
+        <h4 class="author-card-name"><a href="/author/james/">James Ford</a></h4>
+            <p>Technical Lead and Software Engineer. Front end / Javascript specialist, constantly tinkering with technology.</p>
     </section>
 </section>
 <div class="post-full-footer-right">
-    <a class="author-card-button" href="../author/james/">Read More</a>
+    <a class="author-card-button" href="/author/james/">Read More</a>
 </div>
 
 
@@ -321,26 +321,26 @@ ghost.init({
                 <article class="read-next-card">
                     <header class="read-next-card-header">
                         <small class="read-next-card-header-sitetitle">— Psyked —</small>
-                        <h3 class="read-next-card-header-title"><a href="../tag/canvas/">Canvas</a></h3>
+                        <h3 class="read-next-card-header-title"><a href="/tag/canvas/">Canvas</a></h3>
                     </header>
                     <div class="read-next-divider"><svg xmlns="//www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
 </div>
                     <div class="read-next-card-content">
                         <ul>
-                            <li><a href="../link-experiments-with-canvas-and-the-hype-framework/">Link: Experiments with Canvas and the HYPE Framework</a></li>
+                            <li><a href="/link-experiments-with-canvas-and-the-hype-framework/">Link: Experiments with Canvas and the HYPE Framework</a></li>
                         </ul>
                     </div>
                     <footer class="read-next-card-footer">
-                        <a href="../tag/canvas/">1 post →</a>
+                        <a href="/tag/canvas/">1 post →</a>
                     </footer>
                 </article>
 
                 <article class="post-card post tag-nodejs tag-trello">
-        <a class="post-card-image-link" href="../uploading-files-to-trello-with-node-js/">
-            <div class="post-card-image" style="background-image: url(../content/images/2017/05/Optimized-sanwal-deen-93466.jpg)"></div>
+        <a class="post-card-image-link" href="/uploading-files-to-trello-with-node-js/">
+            <div class="post-card-image" style="background-image: url(/content/images/2017/05/Optimized-sanwal-deen-93466.jpg)"></div>
         </a>
     <div class="post-card-content">
-        <a class="post-card-content-link" href="../uploading-files-to-trello-with-node-js/">
+        <a class="post-card-content-link" href="/uploading-files-to-trello-with-node-js/">
             <header class="post-card-header">
                     <span class="post-card-tags">Node.js</span>
                 <h2 class="post-card-title">Uploading files to Trello with Node.js</h2>
@@ -358,7 +358,7 @@ ghost.init({
                         James Ford
                     </div>
 
-                        <a href="../author/james/" class="static-avatar"><img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford"></a>
+                        <a href="/author/james/" class="static-avatar"><img class="author-profile-image" src="/content/images/2018/06/profile-photo.jpeg" alt="James Ford"></a>
                 </li>
             </ul>
 
@@ -369,11 +369,11 @@ ghost.init({
 </article>
 
                 <article class="post-card post tag-agile">
-        <a class="post-card-image-link" href="../how-to-effectively-kill-your-agile-team/">
-            <div class="post-card-image" style="background-image: url(../content/images/2017/04/giphy.gif)"></div>
+        <a class="post-card-image-link" href="/how-to-effectively-kill-your-agile-team/">
+            <div class="post-card-image" style="background-image: url(/content/images/2017/04/giphy.gif)"></div>
         </a>
     <div class="post-card-content">
-        <a class="post-card-content-link" href="../how-to-effectively-kill-your-agile-team/">
+        <a class="post-card-content-link" href="/how-to-effectively-kill-your-agile-team/">
             <header class="post-card-header">
                     <span class="post-card-tags">Agile Software Development</span>
                 <h2 class="post-card-title">How to effectively kill your Agile Team</h2>
@@ -391,7 +391,7 @@ ghost.init({
                         James Ford
                     </div>
 
-                        <a href="../author/james/" class="static-avatar"><img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford"></a>
+                        <a href="/author/james/" class="static-avatar"><img class="author-profile-image" src="/content/images/2018/06/profile-photo.jpeg" alt="James Ford"></a>
                 </li>
             </ul>
 
@@ -407,7 +407,7 @@ ghost.init({
 
 <div class="floating-header">
     <div class="floating-header-logo">
-        <a href="../">
+        <a href="https://www.psyked.co.uk">
             <span>Psyked</span>
         </a>
     </div>
@@ -437,9 +437,9 @@ ghost.init({
 
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="../">Psyked</a> © 2018</section>
+                <section class="copyright"><a href="https://www.psyked.co.uk">Psyked</a> © 2018</section>
                 <nav class="site-footer-nav">
-                    <a href="../">Latest Posts</a>
+                    <a href="https://www.psyked.co.uk">Latest Posts</a>
                     
                     <a href="https://twitter.com/psyked" target="_blank" rel="noopener">Twitter</a>
                     <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
@@ -452,7 +452,7 @@ ghost.init({
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=79f0267bb1"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js?v=79f0267bb1"></script>
 
 
     <script>

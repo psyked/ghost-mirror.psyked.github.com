@@ -8,12 +8,12 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=79f0267bb1.css">
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=79f0267bb1">
 
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="index.html">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.psyked.co.uk/from-static-html-to-react-to-nuxt/">
     <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="amphtml" href="amp/index.html">
+    <link rel="amphtml" href="https://www.psyked.co.uk/from-static-html-to-react-to-nuxt/amp/">
     
     <meta property="og:site_name" content="Psyked">
     <meta property="og:type" content="article">
@@ -61,9 +61,9 @@
         "name": "James Ford",
         "image": {
             "@type": "ImageObject",
-            "url": "https://www.psyked.co.uk/content/images/2017/09/profile-photo-2.jpg",
-            "width": 1367,
-            "height": 1365
+            "url": "https://www.psyked.co.uk/content/images/2018/06/profile-photo.jpeg",
+            "width": 460,
+            "height": 460
         },
         "url": "https://www.psyked.co.uk/author/james/",
         "sameAs": [
@@ -89,7 +89,7 @@
 }
     </script>
 
-    <script src="../public/ghost-sdk.js?v=79f0267bb1"></script>
+    <script src="/public/ghost-sdk.js?v=79f0267bb1"></script>
 <script>
 ghost.init({
 	clientId: "ghost-frontend",
@@ -97,7 +97,7 @@ ghost.init({
 });
 </script>
     <meta name="generator" content="Ghost 1.22">
-    <link rel="alternate" type="application/rss+xml" title="Psyked" href="../rss/index.html">
+    <link rel="alternate" type="application/rss+xml" title="Psyked" href="https://www.psyked.co.uk/rss/">
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -127,10 +127,10 @@ ghost.init({
     <div class="inner">
         <nav class="site-nav">
     <div class="site-nav-left">
-                <a class="site-nav-logo" href="../">Psyked</a>
+                <a class="site-nav-logo" href="https://www.psyked.co.uk">Psyked</a>
             <ul class="nav" role="menu">
     <li class="nav-home" role="menuitem"><a href="https://www.psyked.co.uk/">Home</a></li>
-    <li class="nav-about" role="menuitem"><a href="../about/">About</a></li>
+    <li class="nav-about" role="menuitem"><a href="https://www.psyked.co.uk/about/">About</a></li>
     <li class="nav-pokproject" role="menuitem"><a href="https://www.pokeproject.co.uk/">Poképroject</a></li>
     <li class="nav-duotone" role="menuitem"><a href="https://psyked.github.io/duotone/">Duotone</a></li>
     <li class="nav-runmaps" role="menuitem"><a href="https://psyked.github.io/runmaps/">RunMaps</a></li>
@@ -158,12 +158,12 @@ ghost.init({
             <header class="post-full-header">
                 <section class="post-full-meta">
                     <time class="post-full-meta-date" datetime="2017-04-10">10 April 2017</time>
-                        <span class="date-divider">/</span> <a href="../tag/web-development/">Web development</a>
+                        <span class="date-divider">/</span> <a href="/tag/web-development/">Web development</a>
                 </section>
                 <h1 class="post-full-title">PokéProject: from Static HTML, to React, to Nuxt.</h1>
             </header>
 
-            <figure class="post-full-image" style="background-image: url(../content/images/2017/04/ivysaur.png)">
+            <figure class="post-full-image" style="background-image: url(/content/images/2017/04/ivysaur.png)">
             </figure>
 
             <section class="post-full-content">
@@ -215,15 +215,15 @@ ghost.init({
 <p>Once I had started it was really easy to transform my bespoke, standalone JavaScript code into React components, and once I had those it was startlingly easy to use, re-use and mash those components together to begin exploring a host of new directions for my application.</p>
 <h3 id="problemswithreact">Problems with React</h3>
 <p>The problem was, my out-of-the-box React application didn't support server-side rendering, which was kinda the main point of adopting it in the first place.</p>
-<p>React is very popular, and as a result there are loads of starter tutorials and bootstrap projects available. And I do mean loads. There's even <a href="index.html">a website dedicated to helping you find one with the features that you need.</a> I picked the first one I found that I found accessible, and ended up without the universal rendering support that I really needed from it in the first place.</p>
+<p>React is very popular, and as a result there are loads of starter tutorials and bootstrap projects available. And I do mean loads. There's even <a>a website dedicated to helping you find one with the features that you need.</a> I picked the first one I found that I found accessible, and ended up without the universal rendering support that I really needed from it in the first place.</p>
 <p>No problem, I thought, and picked another. Most of the structure was the same, and I spent an evening porting the code across, only to discover that 'this' template uses React <em>and</em> Redux. <a href="//redux.js.org/">Redux</a> is a whole other deal - they even advise against taking on the two for the first time at the same time specifically on their website. Jump forward in time and wasted a few more days trying to figure out how <em>that</em> works, and I still don't have a React app with server-side rendered content, and so I'm back to desperately researching React starter templates for one that's a) easy enough for me to understand without lots of reading documentation and b) supports server side rendering, hot module reloading and everything else I think a project should have.</p>
-<p><img src="../content/images/2017/04/soconfusing.gif" alt="Oh, dear, everything is so confusing."></p>
+<p><img src="/content/images/2017/04/soconfusing.gif" alt="Oh, dear, everything is so confusing."></p>
 <p>By this point, I've spent almost as much time trying to understand React and getting a template which just <em>works</em> that I spent developing the core of the application. I want to work on my application functionality, not the boring things like configuration and customisation - that's the whole point of adopting a framework, abstracting away the dull, mundane bits of development.</p>
 <h3 id="admittingdefeat">Admitting defeat</h3>
 <p>I tried React because it offered to componentise my source code, give me a solid URL routing library, make me organise my source code better and offer server side rendering, but all I really ended up doing was realising 'React' as I understood it was more an umbrella term for a whole host of libraries, not one of which seemed to be intuitive enough for me to understand.</p>
 <h2 id="findingvuejs">Finding Vue.js</h2>
 <p><a href="https://vuejs.org/">Vue.js,</a> had been a technology in my peripheral vision for a little while, and I started really looking at it again after my failures with React. It's perhaps wrong to like a technology purely based on the branding of its website, but it has got that going for it as well. I don't start with the documentation when looking at a technology, I start with the code examples, and I was quickly redirected to the Nuxt project because it advertised server-side rendering.</p>
-<p><img src="../content/images/2017/04/nuxt.png" alt="Nuxt Logo"></p>
+<p><img src="/content/images/2017/04/nuxt.png" alt="Nuxt Logo"></p>
 <h2 id="adoptingnuxt">✨Adopting Nuxt✨</h2>
 <p>My experience with <a href="https://nuxtjs.org/">Nuxt</a> has been significantly better than that with React. Right from the start the example applications available on <a href="https://github.com/nuxt">GitHub</a> have 'just worked', and have been simple enough for me to muddle through without further reading and still offer all of the features I needed. Somehow, it's more intuitive than React ever was.</p>
 <p>Quite literally, I was able to find, download, install and have a working local development and production server working as a proof of concept with an Express-based API, webpack code-splitting, hot module reloading and everything else in under an hour. Given that I couldn't achieve the equivalent thing in <em>two weeks</em> of development with React, I was hooked on Nuxt fairly quickly.</p>
@@ -239,14 +239,14 @@ ghost.init({
 
                     
 <section class="author-card">
-        <img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford">
+        <img class="author-profile-image" src="/content/images/2018/06/profile-photo.jpeg" alt="James Ford">
     <section class="author-card-content">
-        <h4 class="author-card-name"><a href="../author/james/">James Ford</a></h4>
-            <p>Front End web developer, author of the Flash Facebook Cookbook and Senior Developer at Deeson.</p>
+        <h4 class="author-card-name"><a href="/author/james/">James Ford</a></h4>
+            <p>Technical Lead and Software Engineer. Front end / Javascript specialist, constantly tinkering with technology.</p>
     </section>
 </section>
 <div class="post-full-footer-right">
-    <a class="author-card-button" href="../author/james/">Read More</a>
+    <a class="author-card-button" href="/author/james/">Read More</a>
 </div>
 
 
@@ -264,28 +264,28 @@ ghost.init({
                 <article class="read-next-card">
                     <header class="read-next-card-header">
                         <small class="read-next-card-header-sitetitle">— Psyked —</small>
-                        <h3 class="read-next-card-header-title"><a href="../tag/web-development/">Web development</a></h3>
+                        <h3 class="read-next-card-header-title"><a href="/tag/web-development/">Web development</a></h3>
                     </header>
                     <div class="read-next-divider"><svg xmlns="//www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
 </div>
                     <div class="read-next-card-content">
                         <ul>
-                            <li><a href="../a-modern-development-workflow-ci-and-cd/">Hallmarks of a Modern development workflow - Continuous Integration &amp; Deployment</a></li>
-                            <li><a href="../modular-code-libraries-ftw/">Modular Code Libraries FTW</a></li>
-                            <li><a href="../what-to-look-for-from-a-prospective-developer/">What to look for from a (prospective) Developer</a></li>
+                            <li><a href="/a-modern-development-workflow-ci-and-cd/">Hallmarks of a Modern development workflow - Continuous Integration &amp; Deployment</a></li>
+                            <li><a href="/modular-code-libraries-ftw/">Modular Code Libraries FTW</a></li>
+                            <li><a href="/what-to-look-for-from-a-prospective-developer/">What to look for from a (prospective) Developer</a></li>
                         </ul>
                     </div>
                     <footer class="read-next-card-footer">
-                        <a href="../tag/web-development/">See all 4 posts →</a>
+                        <a href="/tag/web-development/">See all 4 posts →</a>
                     </footer>
                 </article>
 
                 <article class="post-card post tag-agile">
-        <a class="post-card-image-link" href="../how-to-effectively-kill-your-agile-team/">
-            <div class="post-card-image" style="background-image: url(../content/images/2017/04/giphy.gif)"></div>
+        <a class="post-card-image-link" href="/how-to-effectively-kill-your-agile-team/">
+            <div class="post-card-image" style="background-image: url(/content/images/2017/04/giphy.gif)"></div>
         </a>
     <div class="post-card-content">
-        <a class="post-card-content-link" href="../how-to-effectively-kill-your-agile-team/">
+        <a class="post-card-content-link" href="/how-to-effectively-kill-your-agile-team/">
             <header class="post-card-header">
                     <span class="post-card-tags">Agile Software Development</span>
                 <h2 class="post-card-title">How to effectively kill your Agile Team</h2>
@@ -303,7 +303,7 @@ ghost.init({
                         James Ford
                     </div>
 
-                        <a href="../author/james/" class="static-avatar"><img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford"></a>
+                        <a href="/author/james/" class="static-avatar"><img class="author-profile-image" src="/content/images/2018/06/profile-photo.jpeg" alt="James Ford"></a>
                 </li>
             </ul>
 
@@ -314,11 +314,11 @@ ghost.init({
 </article>
 
                 <article class="post-card post tag-external-links tag-gif">
-        <a class="post-card-image-link" href="../the-history-of-the-humble-gif/">
-            <div class="post-card-image" style="background-image: url(../content/images/2017/02/jan-kahanek-184676.jpg)"></div>
+        <a class="post-card-image-link" href="/the-history-of-the-humble-gif/">
+            <div class="post-card-image" style="background-image: url(/content/images/2017/02/jan-kahanek-184676.jpg)"></div>
         </a>
     <div class="post-card-content">
-        <a class="post-card-content-link" href="../the-history-of-the-humble-gif/">
+        <a class="post-card-content-link" href="/the-history-of-the-humble-gif/">
             <header class="post-card-header">
                     <span class="post-card-tags">External links</span>
                 <h2 class="post-card-title">The history of the humble gif</h2>
@@ -336,7 +336,7 @@ ghost.init({
                         James Ford
                     </div>
 
-                        <a href="../author/james/" class="static-avatar"><img class="author-profile-image" src="../content/images/2017/09/profile-photo-2.jpg" alt="James Ford"></a>
+                        <a href="/author/james/" class="static-avatar"><img class="author-profile-image" src="/content/images/2018/06/profile-photo.jpeg" alt="James Ford"></a>
                 </li>
             </ul>
 
@@ -352,7 +352,7 @@ ghost.init({
 
 <div class="floating-header">
     <div class="floating-header-logo">
-        <a href="../">
+        <a href="https://www.psyked.co.uk">
             <span>Psyked</span>
         </a>
     </div>
@@ -382,9 +382,9 @@ ghost.init({
 
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="../">Psyked</a> © 2018</section>
+                <section class="copyright"><a href="https://www.psyked.co.uk">Psyked</a> © 2018</section>
                 <nav class="site-footer-nav">
-                    <a href="../">Latest Posts</a>
+                    <a href="https://www.psyked.co.uk">Latest Posts</a>
                     
                     <a href="https://twitter.com/psyked" target="_blank" rel="noopener">Twitter</a>
                     <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
@@ -397,7 +397,7 @@ ghost.init({
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=79f0267bb1"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js?v=79f0267bb1"></script>
 
 
     <script>
