@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>AIR 1.5 is now available!</title>
+    <title>Building “duotone”</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,23 +15,27 @@
     
     <meta property="og:site_name" content="Psyked">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="AIR 1.5 is now available!">
-    <meta property="og:description" content="//blog.everythingflex.com/2008/11/17/introducing-adobe%c2%ae-air%e2%84%a2-15/">
-    <meta property="og:url" content="https://www.psyked.co.uk/air-15-is-now-available/">
-    <meta property="article:published_time" content="2008-11-17T09:00:11.000Z">
-    <meta property="article:modified_time" content="2017-09-24T21:42:36.000Z">
-    <meta property="article:tag" content="Adobe AIR">
+    <meta property="og:title" content="Building “duotone”">
+    <meta property="og:description" content="Applying filters to images and generating downloads with client-side Javascript It all started with ^ this Tweet. ^ Whist stumbling through my reading list I was impressed by the image filtering capabilities of the humble SVG, as demonstrated by Lentie Ward’s article: ‘Using SVG to Create a Duotone Effect on Images’">
+    <meta property="og:url" content="https://www.psyked.co.uk/building-duotone/">
+    <meta property="og:image" content="https://www.psyked.co.uk/content/images/2018/06/duotone-output-1-1.png">
+    <meta property="article:published_time" content="2018-06-09T21:43:11.000Z">
+    <meta property="article:modified_time" content="2018-06-09T21:43:11.000Z">
+    <meta property="article:tag" content="Duotone">
     
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="AIR 1.5 is now available!">
-    <meta name="twitter:description" content="//blog.everythingflex.com/2008/11/17/introducing-adobe%c2%ae-air%e2%84%a2-15/">
-    <meta name="twitter:url" content="https://www.psyked.co.uk/air-15-is-now-available/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Building “duotone”">
+    <meta name="twitter:description" content="Applying filters to images and generating downloads with client-side Javascript It all started with ^ this Tweet. ^ Whist stumbling through my reading list I was impressed by the image filtering capabilities of the humble SVG, as demonstrated by Lentie Ward’s article: ‘Using SVG to Create a Duotone Effect on Images’">
+    <meta name="twitter:url" content="https://www.psyked.co.uk/building-duotone/">
+    <meta name="twitter:image" content="https://www.psyked.co.uk/content/images/2018/06/duotone-output-1-1.png">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="James Ford">
     <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="Adobe AIR">
+    <meta name="twitter:data2" content="Duotone">
     <meta name="twitter:site" content="@psyked">
     <meta name="twitter:creator" content="@psyked">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
     
     <script type="application/ld+json">
 {
@@ -61,12 +65,18 @@
             "https://twitter.com/psyked"
         ]
     },
-    "headline": "AIR 1.5 is now available!",
-    "url": "https://www.psyked.co.uk/air-15-is-now-available/",
-    "datePublished": "2008-11-17T09:00:11.000Z",
-    "dateModified": "2017-09-24T21:42:36.000Z",
-    "keywords": "Adobe AIR",
-    "description": "//blog.everythingflex.com/2008/11/17/introducing-adobe%c2%ae-air%e2%84%a2-15/",
+    "headline": "Building “duotone”",
+    "url": "https://www.psyked.co.uk/building-duotone/",
+    "datePublished": "2018-06-09T21:43:11.000Z",
+    "dateModified": "2018-06-09T21:43:11.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.psyked.co.uk/content/images/2018/06/duotone-output-1-1.png",
+        "width": 1200,
+        "height": 800
+    },
+    "keywords": "Duotone",
+    "description": "Applying filters to images and generating downloads with client-side Javascript It all started with ^ this Tweet. ^ Whist stumbling through my reading list I was impressed by the image filtering capabilities of the humble SVG, as demonstrated by Lentie Ward’s article: ‘Using SVG to Create a Duotone Effect on Images’",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://www.psyked.co.uk/"
@@ -83,7 +93,7 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-    
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
 
 </head>
 
@@ -98,15 +108,34 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">AIR 1.5 is now available!</h1>
+                <h1 class="post-title">Building “duotone”</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/james/">James Ford</a></p>
-                    <time class="post-date" datetime="2008-11-17">2008-11-17</time>
+                    <time class="post-date" datetime="2018-06-09">2018-06-09</time>
                 </section>
             </header>
+            <figure class="post-image">
+                <amp-img src="https://www.psyked.co.uk/content/images/2018/06/duotone-output-1-1.png" width="600" height="400" layout="responsive"></amp-img>
+            </figure>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><p><a href="//blog.everythingflex.com/2008/11/17/introducing-adobe%c2%ae-air%e2%84%a2-15/">//blog.everythingflex.com/2008/11/17/introducing-adobe%c2%ae-air%e2%84%a2-15/</a></p>
+                <div class="kg-card-markdown"><h2 id="applyingfilterstoimagesandgeneratingdownloadswithclientsidejavascript">Applying filters to images and generating downloads with client-side Javascript</h2>
+<p><a href="https://twitter.com/steveschoger/status/971060691212951552"></a></p>
+<p>It all started with <a href="https://twitter.com/steveschoger/status/971060691212951552">^ this Tweet. ^</a></p>
+<p>Whist stumbling through my reading list I was impressed by the image filtering capabilities of the humble SVG, as demonstrated by <a href="https://css-tricks.com/using-svg-to-create-a-duotone-image-effect/">Lentie Ward’s article: ‘Using SVG to Create a Duotone Effect on Images’</a> and decided to explore this further.</p>
+<p>The end result is a single page application that I’ve imaginatively called <a href="https://psyked.github.io/duotone/">Duotone</a>, which allows you to select an image, apply a filter from a selection of presets and then download the resulting image as a new image file.</p>
+<p></p>
+<h3 id="howduotoneimageswork">How Duotone images work</h3>
+<p>Achieving this effect isn’t actually too difficult, and involves two steps. The first is to make the entire image greyscale, and the second is to map the resulting image palette to a new colour palette, which in this case is a gradient made from blending two colours.</p>
+<p>Re-mapping the image gradient is different to applying a blend mode to an image or colourising it with a colour overlay, because it allows the output image to be constructed from more than a single colour.</p>
+<p><br>
+</p>
+<h3 id="howibuiltduotonetheapplication">How I built Duotone (the application)</h3>
+<p>The <a href="https://psyked.github.io/duotone/">application itself</a> is a single static HTML page, which is hosted on GitHub Pages. It uses <a href="https://vuejs.org/">Vue.js</a> syntax with SASS for the page styling, <a href="https://nuxtjs.org/">Nuxt.js</a> to generate the static HTML page and <a href="https://github.com/eligrey/FileSaver.js">FileSaver.js</a> to generate the image downloads in the browser. And of course, the vast majority of the logic and techniques for actually achieving the effect in the first place was shamelessly appropriated from <a href="https://css-tricks.com/using-svg-to-create-a-duotone-image-effect/">Lentie Ward’s CSS Tricks article.</a></p>
+<p>Thus far <a href="https://psyked.github.io/duotone/">Duotone</a> has taken a few nights’ work to build. Nuxt.js has made the process of getting a working project template very simple and allowed me to concentrate on building working code and not on deployment processes or tooling.</p>
+<h3 id="whatdoesthefuturehold">What does the future hold?</h3>
+<p>Having a set number of templates hardcoded into the application is fairly limiting, so that’s the next thing to address — making the colour palettes completely customisable, and maybe even introducing an option for including more than two colours in the mapping gradient.</p>
+<p>There we are then. <a href="https://medium.com/@psyked/3-hour-hacks-d22772439d04">3 hour hack</a> #1 complete. 👍</p>
 </div>
 
             </section>
